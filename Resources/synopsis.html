@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Szinopszis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <link href="CSS files/synopsis.css" rel="stylesheet">
+  <link href="CSS files/gallery.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 100) {
+          $("nav").addClass("scrolled");
+        } else {
+          $("nav").removeClass("scrolled");
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Szinopszis</h1>
+    </div>
+  </div>
+
+  <nav>
+    <span onclick="mobilenav()" id="mobile_nav"><img src="Pictures/Miscellaneous/menu_black_48dp.svg"><span
+        id="mobile_title">A 12 legszebb magyar vers</span></span>
+    <ul id="desktop_nav">
+      <li><a href="homepage.html">Főoldal</a></li>
+      <li><a href="synopsis.html" class="active">Szinopszis</a></li>
+      <li><a href="books.html">Könyvek</a></li>
+      <li><a href="videos.html">Nagy Versmondások</a></li>
+      <li><a href="gallery.html">Galéria</a></li>
+      <li><a href="next.html">A folytatás</a></li>
+
+    </ul>
+  </nav>
+
+  <div id="container">
+
+    <div class="accordion-div">
+      <button class="accordion">Szinopszis<i class="fa fa-caret-down"></i></button>
+      <div class="panel" id="slow">
+        <div class="accordion_paragraph">
+          <div id="title_row">
+            <h2>A 12 LEGSZEBB MAGYAR VERS-PROGRAM</h2>
+            <h3><i><b>(2007-2013)</b></i></h3>
+          </div>
+          <div id="accordion_text">
+            <p>2007 szeptemberében lett 160 éves a magyar irodalom történetének a világon egyik legismertebb remeke, a
+              Szeptember végén című Petőfi-költemény. Ennek tiszteletére tudományos konferenciát rendeztünk a vers
+              szülőhelyén, Koltón, illetve a közeli Nagybányán.</p>
+            <p>A szimpóziumon részt vett Margócsy István irodalomtörténész, a Petőfi-életmű kiváló ismerője, aki
+              zárszavában
+              kifejtette, hogy az ilyesfajta emberi és szakmai találkozások azért fontosak, mert választ próbálnak adni
+              a
+              jelenkor egyik legfontosabb kérdésére: „Mit kezdjünk a kultúrával, mit kezdjünk a költészettel a XXI.
+              században?”</p>
+            <p>A szintén kiváló Petőfi-kutató Kerényi Ferenc – betegsége miatt – előadásának szövegét küldte el erre a
+              konferenciára, egyetértve annak szellemével, sőt, megfogalmazta számomra azt is, hogy akkor érdemes
+              ilyesfajta
+              konferenciát csinálni, „ha az embernek van koncepciója”.</p>
+            <p>Ez utóbbi kijelentésen, illetve a Szeptember végén-konferencia sikerén felbuzdulva, az ott
+              elhangzottaktól
+              motiválva született meg és indult útjára a Kárpát-medencében A 12 legszebb magyar vers-program.</p>
+            <p>A versek kiválasztásában az irodalomtörténeti kánon – és persze a személyes ízlés elfogultsága – mellett
+              elsősorban az vezérelt, hogy a szövegek részei legyenek az általános vagy középiskolai tananyagnak,
+              ismertek
+              legyenek az irodalom iránt kevésbé érdeklődők körében is. Fájdalom, hogy a sorozatból kimaradt Balassi
+              Bálint,
+              Csokonai Vitéz Mihály, Kölcsey Ferenc, Szabó Lőrinc és még sokan mások. De határt kellett szabni a versek
+              mennyiségének, s úgy tűnt, a 12-es szám egyrészt már más művészetekben is alkalmas volt a legjobbak
+              megtalálására (lásd például a filmek világát: „a Budapesti 12”!), továbbá a 12 sem nem sok, sem nem kevés,
+              kerek szám is, meg nem is kerek – szóval rokonszenves aritmetikai mennyiség…</p>
+            <div class="accordion_image" onclick="openmodal();toSlide(1)">
+              <img style="width: 90%" alt="a 12 könyv"
+                src="Pictures/Synopsis pictures/A 12 legszebb magyar vers-program kotetei_2013.JPG">
+              <figcaption><i>A kötetek, melyek vastagságukkal jelzik a vers kánonbeli helyét is.
+                  <br>
+                  A gerinceken összeolvasható szöveg: TIZENKÉT VERS</i>
+              </figcaption>
+            </div>
+            <p>S ha lesznek konferenciák, akkor kötetek is kellenek, gondoltam tovább a koncepciót. Megszületett az
+              ötlet,
+              hogy legyen ez egy igazi könyvsorozat, melyet a későbbiekben magyartanárok és egyetemisták haszonnal
+              forgathatnak majd, hiszen – feltételezésünk szerint – az adott verssel kapcsolatban a legújabb kutatási
+              eredményeket és a legfrissebb gondolatokat tartalmazzák. A „T I Z E N K É T V E R S” kifejezés pedig
+              szerencsére éppen 12 betűből áll, így kérésemre – utalva ezzel a régi Mozgó Világ című folyóirat grafikai
+              megoldására – könnyedén megoldotta kiváló grafikusunk, Scheffer Miklós, hogy a könyvek gerincén egy-egy
+              betű
+              végül eme szintagmává álljon majd össze. (Az első borítón pedig mindig a szóban forgó vers kéziratát vagy
+              annak rekonstrukcióját hoztuk.) A 6–7. gerincbetűnél még nem voltunk biztosak benne, hogy a szavak végére
+              érünk, hogy sikerül a programot befejeznünk, de amikor a 12. kötetet is átadhattam a szerzőknek 2013
+              szeptemberében – ismét Koltón –, úgy éreztem, kegyelmi pillanatoknak vagyok a részese.</p>
+            <p>A második alkalommal, 2008 tavaszán csatlakozott a projekthez Jordán Tamás, Kossuth-díjas színművész, a
+              szombathelyi Weöres Sándor Színház igazgatója, akinek még korábbról volt egy álma – mint mesélte nekem –,
+              mégpedig az, hogy sok ember egyszerre, tömegben mondjon verset. Felkérvén őt Pilinszky János Apokrifjének
+              elmondására a második konferencia nyitányaként – egy szombathelyi piros lámpánál ültünk az autóban –,
+              azonnal
+              megéreztük, hogy kettőnk szándékai összetalálkoztak egymással. Két-három hét múlva aztán a helyi
+              Sportházban
+              majdnem másfél ezer ember, elsősorban 15 éves lány és fiú szájából hangzott fel elementáris erővel a
+              Pilinszky-vers szózata – Melis László gyönyörű zenéje, Jordán Tamás vezénylete mellett. Az eseményt
+              elneveztük
+              Nagy Versmondásnak, melyet aztán minden következő konferencián megismételtünk az adott helyszínen
+              diákokkal és
+              felnőttekkel egyaránt. Az első ilyen rendezvény végén levetítettük Maár Gyula portréfilmjének ama
+              részletét,
+              amikor a költő elmondja az Apokrifet. Döbbenetes hatása volt az egy szál ember vékony és rekedt hangú,
+              szakrális kántálásának. Ám az 1350 fiatalt mintha odaszögezték volna a székekhez, úgy hallgatták végig a
+              10-12
+              perces felvételt. Azok a fiatalok, akiket előszeretettel bélyegzünk hanyagnak és nemtörődömnek, a kultúra
+              és a
+              hagyományok iránt érdeklődés nélkülinek. A költészet és egy sugallatos személyiség azonban mindannyiukat
+              elvarázsolta. Úgy éreztük akkor Jordán Tamással, hogy amit mi csinálunk, az is lehet fontos, de az igazi
+              Nagy
+              Versmondás mégiscsak az, amikor Pilinszky János egy szál magában tart fogva 1500 embert…</p>
+            <div class="accordion_image" onclick="openmodal();toSlide(2)">
+              <img style="width: 90%" alt="a 12 könyv" src="Pictures/Synopsis pictures/Picture1.png">
+              <figcaption><i>Jordán Tamás Nagy Versmondást vezényel Csöngén,
+                  <br>
+                  Weöres Sándor falujában 2013 tavaszán</i>
+              </figcaption>
+            </div>
+            <p>Később még sok helyre hívtak és hívnak bennünket közösen és hangosan verset mondani a 12 legszebb
+              vers-programtól függetlenül is. Többször jártunk például Budapesten, Keszthelyen, Százhalombattán, sőt,
+              Erdélyben Marosvásárhelytől Sepsiszentgyörgyig szinte minden városban – kiegészülve a Sebő-együttessel –;
+              e
+              meghívásokból és az ottani lelkesedésből is érzékelhető, hogy az új műfaj, a Nagy Versmondás ráérzett
+              valamely
+              meglévő igényre; általa a költészet visszatalált ősi formáihoz: a közösségiséghez és a hangzó beszédhez.
+            </p>
+            <p>E versmondások mindegyike lélekemelő esemény volt, de különösen ilyenekké váltak a határainkon túli
+              alkalmak:
+              a szabadkai (Kosztolányi Dezső: Hajnali részegség), a nagyváradi (Ady Endre: Kocsi-út az éjszakában), a
+              koltói
+              Nagy Versmondás (Petőfi Sándor: Szeptember végén). Felejthetetlen élmény, amikor egy másik ország többségi
+              kultúrájában élő és azt tisztelő magyar gyerekek és felnőttek halhatatlan magyar költőink versei
+              segítségével
+              átélhetik nemzeti identitásukat.</p>
+            <p>Konferenciáink bevált struktúrája szerint mindig az első napon tartottuk a nagyobb ívű előadásokat az
+              adott
+              költő monográfusaival, kutatóival (Szegedy-Maszák Mihály, Jelenits István, Sipos Lajos, Kenyeres Zoltán,
+              Láng
+              Gusztáv, Bányai János, Faragó Kornélia, Margócsy István, Kerényi Ferenc, Kabdebó Lóránt, Tverdota György,
+              Bókay Antal, Dávidházi Péter, Nyilasy Balázs, Kovács Árpád, Szitár Katalin, Odorics Ferenc és mások), a
+              második napon a szóban forgó költemény részletes elemzése-értelmezése következett, majd a harmadik napon
+              elsősorban a vers és a költő tanításával kapcsolatos problémák kerültek terítékre.</p>
+            <p>Mindvégig azon igyekeztünk, hogy az egyes alkalmakat a költő életéhez vagy magához a vershez kapcsolódó
+              helyszín nyújtotta élményszerűség mellett kiállításokkal, hangversenyekkel, filmvetítésekkel, archív
+              hangfelvételek lejátszásával, könyvbemutatókkal – az előző konferencia kötetét mindig a következő
+              összejövetel
+              első estéjén mutattuk be – tegyük színesebbé. Máig is csodálattal gondolok arra, hogy alkalmanként a
+              kolléganők és a kollégák határainkon innenről és túlról (ezeknek a határoknak egy része talán éppen
+              miattunk,
+              illetve az irodalom miatt is szűnt meg a program közben?) több száz kilométert utaztak a saját
+              költségükön,
+              hogy 15-20 percet beszéljenek egy költeményről. Ezért én ma már egészen biztos vagyok benne, hogy a
+              költészet
+              mégiscsak örök. Az ember ugyan esendő, de az ember létrehozta szellemi dolgok örökérvényűek. Jordán Tamás
+              hangokból épített katedrálist gyerekek százaival, mi betűkből igyekeztünk összeróni jövendő korok számára
+              valamit, ami fontosabb a jelennél.</p>
+            <p>A program tudományos értékét természetesen majd a jövő hivatott megítélni. Terveink szerint a köteteket
+              még
+              egyszer kiadjuk, újraszerkesztett, frissített változatban, illetve korszerűsítjük szerény honlapunkat,
+              ahol a
+              mozgalommá fejlődött Nagy Versmondások dokumentumait és módszertanát, illetve a program tudományos
+              eredményeit
+              rögzítjük, összegezzük. Elérhetővé, letölthetővé tesszük köteteinket pdf formátumban, hogy minél többen
+              használhassák őket munkájukhoz (csak nagyon kicsi példányszámban jelenhettek meg annak idején).</p>
+            <p>Az irodalom lényege mindig is a megértésre való törekvés és ösztönzés volt (gondoljunk ismét a határok
+              megszűnésére!). Minden műalkotás erről beszél: készüljön akár ecsettel, vésővel és kalapáccsal, vagy
+              rögzítsék
+              hangjegyekbe dallamait. Az irodalomnak eszköze ehhez a nyelv, amelynek legmagasabb rendű absztrakciója a
+              költészet, amely pedig – minden remekmű – újratanítja velünk a nyelvet.</p>
+            <p>Meggyőződéssel hisznek ebben nemcsak azok, akik a programban előadóként, szervezőként, versmondóként
+              részt
+              vettek – összesen körülbelül 12 ezren! –, hanem azok is, akik filmjeink révén találkoztak velünk, vagy
+              köteteinket vették kézbe.</p>
+            <p>S bizonyítja ezt az is, hogy Budapesten, a 2014. október 23-án megnyílt Magyarság Házában, ahol a
+              kiállítás
+              egésze a magyar kultúrát és szellemet igyekszik reprezentálni főleg a fiatal korosztály számára, a tíz
+              szoba
+              közül másfelet A 12 legszebb magyar vers-program kapott meg. A rendezők Kosztolányi Dezső A tíz legszebb
+              szó
+              című esszéje alapján adnak ízelítőt a sport, a művelődéstörténet, a képzőművészet, a zene, a tudomány és
+              más
+              területek legjelentősebb alkotásaiból. Mi a Gyöngy szobában mutathatjuk meg, hogyan is mondtuk el Drégely
+              várában Arany János versét körülbelül 300 apróddal, s hogy miképpen írta át a 12 legszebb verset néhány
+              egyetemista diák slam poetry-stílusban.</p>
+            <p>S bizonyítja ezt Pusztay János nyelvészprofesszor is, aki nemcsak megtanulta és előadta – az utolsó
+              konferencián, illetve azóta már többször – a 12 legszebb magyar verset, hanem le is fordíttatta őket hét
+              finnugor nyelvre, majd a fordításokat díszkiadásban meg is jelentette (Masszi Ferenc ihletett
+              illusztrációival). 2012-ben Siófokon, a Finnugor Népek Világkongresszusán minden résztvevője ezt a kötetet
+              kapta ajándékul – köztük olyan népek képviselői is, akik eddig alig-alig hallottak a magyar költészetről.
+              2015-ben a projekt azzal folytatódott, hogy több finnugor nép kiválasztotta a saját 12 legszebb versét, s
+              ezeket folyamatosan lefordítják egymás nyelvére. Sőt, megjelentették a legszebb 50 magyar verset és a 12
+              legszebb magyar novellát is a saját nyelveiken, s elhatározták, hogy az egész programot megismétlik minden
+              finnugor nyelvterületen. Lehet-e ennél ékesebb bizonyítéka annak, hogy – mint fentebb is írtuk – az
+              irodalom
+              legfőbb célja és értéke a megértésre való törekvés?</p>
+            <p>Mint ahogyan azok a meghívások is ezt bizonyítják, melynek eredményeképpen a programvezető nemrégiben
+              tartott
+              előadásokat a programról a Padovai Egyetemen és Hamburgban.</p>
+            <p>Legújabban pedig Lutor Katalin egyetemi hallgató tanulta meg és adta elő már legalább féltucatszor a 12
+              verset Magyarországon, illetve Horváth Tibor, Hamburgban élő irodalomtörténész mondta el e verseket az
+              ottani magyaroknak. Pusztay János már Tallinnban is tartott előadóestet „a legszebbek”-ből, legutóbb pedig
+              a Nyitrai Egyetem konferenciáját megnyitó alsóbodoki rendezvényen szavalt emlékezetesen. Mindhármójuk
+              előadását a programvezető szokta bevezetni, visszaemlékezve a program felejthetetlen tapasztalataira,
+              tudományos eredményeire és egyedi hangulatára.</p>
+            <p>Reménykedünk benne, hogy a folytatás is ilyen sikeres lesz a következő években.</p>
+            <p>Programunk mindvégig élvezhette a Sipos Lajos professzor vezette Magyar Irodalomtörténeti Társaság
+              támogatását is. A program anyagi költségeit pedig – sok más alapítvány, egyesület, kiadó, magánszemély,
+              önkormányzat mellett – mindenekelőtt a Nemzeti Kulturális Alap biztosította. Nélkülük nem jöhetett volna
+              létre
+              ez a mozgalom, amely – úgy vélem – mégiscsak megfogalmazott legalább egyfajta válaszlehetőséget a Margócsy
+              István által föltett kérdésre. Ez a válasz pedig immár A 12 legszebb magyar vers-program és mozgalom
+              jelszavává vált: „Irodalom nélkül lehet élni, csak nem érdemes”.</p>
+            <p id="last_paragraph"><i>Fűzfa Balázs</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-div">
+      <button class="accordion">Synopsis<i class="fa fa-caret-down"></i></button>
+      <div class="panel" id="synopsis">
+        <div class="accordion_paragraph">
+          <div id="title_row">
+            <h2>THE 12 MOST BEAUTIFUL HUNGARIAN POEMS</h2>
+            <h3>Selection by literary historian Balázs Fűzfa</h3>
+          </div>
+          <div id="accordion_selection">
+            <p>
+              Endre Ady, <i>Tracking on a Cart Tonight</i>
+              <br>János Arany, <i>The Two Pages of Szondi</i>
+              <br>Mihály Babits, <i>An Evening Question</i>
+              <br>Dániel Berzsenyi, <i>As Winter Approaches</i>
+              <br>Attila József, <i>Consciousness</i>
+              <br>Dezső Kosztolányi, <i>Daybreak Drunkenness</i>
+              <br>László Nagy, <i>Who Will Take Love</i>
+              <br>Sándor Petőfi, <i>End of September</i>
+              <br>János Pilinszky, <i>Apocrypha</i>
+              <br>Miklós Radnóti, <i>Letter to My Wife</i>
+              <br>Mihály Vörösmarty, <i>The Old Gipsy</i>
+              <br>Sándor Weöres Valse, <i>Triste (“Sad Waltz”)</i>
+            </p>
+          </div>
+          <div id="accordion_text">
+            <p>The series of programmes called “The 12 most beautiful poems” took place between 2007 to 2013 in the
+              Carpathian-basin. The project was launched and run by the Szombathely-based Program for Personal
+              Involvement
+              and Experience in Teaching Literature.</p>
+            <p>The expressed aim of this series of conferences and books was to make attempt at re-reading, re-thinking
+              and
+              re-interpreting these 12 masterpieces witihin the Hungarian literary canon.</p>
+            <p>In the course of the six years 12 volumes have been published, 12 films have been made, over 400
+              conference
+              papers have been read, and approximately 12 thousand students and adults have recited poems publicly and
+              aloud. From conference to conference, professions and generations met due to the good services of an
+              immortal
+              poem.</p>
+            <p>However, the poetic texts not just served as pretexts for the gatherings, but they also became a noble
+              and
+              creative beginning of something we just call the intention and will to understand the other.</p>
+            <p>For literature can teach us how to get rid of our inherent egotism: just like letters apparently denying
+              themselves in favor of forming sensible words, so words too renounce a part of themselves so that they be
+              arranged into sentences, creating thus something that is new and prime.</p>
+            <p id="last_paragraph">Let us hope that this dozen poems en masse can tell more about the world and man
+              shivering and laughing in it
+              than the individual texts would on their own.</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div id="about_picture">
+        <figure>
+        <img src="Pictures/Synopsis pictures/Fuzfa Balazs.jpg">
+        <figcaption><i>Garas Kálmán fotója (2017)</i></figcaption>
+      </figure>
+      </div>
+      <div id="about_text">
+        <h4>Fűzfa Balázs, Dr. habil. PhD<br>
+          irodalomtörténész, egyetemi docens<br>
+          (ELTE Savaria Egyetemi Központ, Szombathely)
+        </h4>
+        <span>Toldy Ferenc-díjas irodalomtörténész. Szakterülete a XIX. század magyar irodalma, az élményközpontú
+          irodalomtanítás programja és Ottlik Géza életműve. Elsősorban Berzsenyi Dániel, Ottlik Géza és Weöres Sándor
+          életművéhez, illetve az irodalomtanítás modernizációjához kapcsolódva kutatások, olvasótáborok,
+          irodalomnépszerűsítő programok kezdeményezője és vezetője. Tudományos kötetek, könyvsorozatok összeállítója, a
+          BÁR című folyóirat főszerkesztője, a Savaria University Press kiadó vezetője. „A 12 legszebb magyar vers” című
+          programja és új szemléletű irodalomtankönyvei az ország határain kívül is ismertté váltak.</span>
+        <br>
+        <br>
+        <br>
+        <h4>Fűzfa, Balázs, Dr. habil. PhD<br>
+          Literary Critic, University Associate Professor<br>
+          (ELTE Savaria University Centre, Szombathely)
+        </h4>
+        <span>Literary historian awarded with the Ferenc Toldy prize. His area of speciality is the literature of 19th
+          century Hungary, the programme of experience centred design of teaching literature, as well as the work of
+          Géza Ottlik. He is the initiator and organizer of researches, readers’ camps, and literature popularisation
+          programmes regarding mainly the work of Dániel Berzsenyi, Géza Ottlik, and Sándor Weöres, as well as the
+          modernization of teaching literature. Editor of scientific publications, book series, the Editor in Chief of
+          the magazine BÁR, the Director of Savaria University Press. His programme called ‘The 12 Most Beautiful
+          Hungarian Poems’ and his literature student’s books with his new approach have become well-known abroad as
+          well.</span>
+
+      </div>
+    </div>
+
+    <div id="modal">
+
+      <div id="modal-content">
+
+        <div class="nav_buttons" id="prev_container">
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        </div>
+
+        <div id="slides">
+          <div class="slide">
+            <img src="Pictures/Synopsis pictures/A 12 legszebb magyar vers-program kotetei_2013.JPG" class="image-slide"
+              id="slide_1">
+          </div>
+          <div class="slide">
+            <img src="Pictures/Synopsis pictures/Picture1.png" class="image-slide" id="slide_2">
+          </div>
+
+        </div>
+
+        <div class="nav_buttons" id="next_container">
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="sidenav"><span id="opensidenav" onclick="openNav()">A Konferenciák</span></div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a class="shortcut" href="szeptember_vegen.html">Szeptember végén</a>
+    <a class="shortcut" href="apokrif.html">Apokrif</a>
+    <a class="shortcut" href="szondi_ket_aprodja.html">Szondi két apródja</a>
+    <a href="esti_kerdes.html">Esti kérdés</a>
+    <a href="level_a_hitveshez.html">Levél a hitveshez</a>
+    <a href="hajnali_reszegseg.html">Hajnali részegség</a>
+    <a href="ki_viszi_at_a_szerelmet.html">Ki viszi át a Szerelmet</a>
+    <a href="kocsi-ut_az_ejszakaban.html">Kocsi-út az éjszakában</a>
+    <a href="a_kozelito_tel.html">A közelítő tél</a>
+    <a href="a_ven_cigany.html">A vén cigány</a>
+    <a href="eszmelet.html">Eszmélet</a>
+    <a href="valse_triste.html">Valse triste</a>
+    <a href="koltotol_koltoig.html">Koltótól Koltóig</a>
+  </div>
+  <script src="JS files/synopsis.js"></script>
+  <script src="JS files/modal.js"></script>
+</body>
+
+</html>

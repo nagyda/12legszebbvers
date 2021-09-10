@@ -1,0 +1,108 @@
+<html>
+  <head>
+      <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+    <style>
+    
+#quick_links ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  }
+
+#quick_links ul li a {
+  text-decoration: none;
+  color: #333;
+    padding: 5px 30px;
+    line-height: 33px;
+    width: 100%;
+}
+
+#quick_links ul li {
+    width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+#dropdown {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: all ease-in-out 0.1s;
+  align-items: center;
+    flex-direction: column;
+}
+
+#quick_links {
+  width: 40%;
+  text-align: center;
+  margin: 10px 0;
+  padding: 30px 0;
+  visibility: hidden;
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+background-color: #fff;
+}
+
+#quick_links ul li a:hover {
+    background-color: rgba(227, 116, 68);
+      color: white;
+      border-radius: 5px;
+  }
+
+  #collapse {
+      vertical-align: middle;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+  }
+
+  #collapse img {
+      width: 24px;
+      padding-left: 20px;
+  }
+    </style>
+  </head>
+  <body>
+        <span id="collapse" onclick="collapse()">Válassz egy konferenciát<img src="/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Miscellaneous/menu_black_48dp.svg"></img></span>
+        <div id="dropdown">
+      <div id="quick_links">
+      <ul>
+        <li><a href="#">Szeptember végén</a></li>
+        <li><a href="#">Apokrif</a></li>
+        <li><a href="#">Szondi két apródja</a></li>
+        <li><a href="#">Esti kérdés</a></li>
+        <li><a href="#">Levél a hitveshez</a></li>
+        <li><a href="#">Hajnali részegség</a></li>
+        <li><a href="#">Ki viszi át a Szerelmet</a></li>
+        <li><a href="#">Kocsi-út az éjszakában</a></li>
+        <li><a href="#">A közelítő tél</a></li>
+        <li><a href="#">A vén cigány</a></li>
+        <li><a href="#">Eszmélet</a></li>
+        <li><a href="#">Valse triste</a></li>
+        <li><a href="#">Koltótól Koltóig</a></li>
+      </ul>
+      </div>
+    </div>
+    <script>
+        function collapse() {
+  var links = document.getElementById("quick_links");
+if (links.style.visibility === "visible") {
+    links.style.visibility = "hidden";
+    links.style.opacity = "0";
+} else {
+    links.style.visibility = "visible";
+    links.style.opacity = "1";
+}
+}
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nagy Versmondások</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+  <link href="CSS files/videos.css" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 100) {
+          $("nav").addClass("scrolled");
+        } else {
+          $("nav").removeClass("scrolled");
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Nagy Versmondások</h1>
+    </div>
+  </div>
+
+
+  <nav>
+    <span onclick="mobilenav()" id="mobile_nav"><img
+        src="/12legszebbvers/Resources/Pictures/Miscellaneous/menu_black_48dp.svg"><span id="mobile_title">A 12 legszebb
+        magyar vers</span></span>
+    <ul id="desktop_nav">
+      <li><a href="homepage.html">Főoldal</a></li>
+      <li><a href="synopsis.html">Szinopszis</a></li>
+      <li><a href="books.html">Könyvek</a></li>
+      <li><a href="videos.html" class="active">Nagy Versmondások</a></li>
+      <li><a href="gallery.html">Galéria</a></li>
+      <li><a href="next.html">A folytatás</a></li>
+
+    </ul>
+  </nav>
+
+  <div id="videos">
+    <div class="video_container">
+      <div class="video_description">
+        <h3>Szondi két apródja</h3>
+        <div class="description_text">
+        <p>„És talán az sem túlzás, ha a balladaírást is azok közé a feladatok közé soroljuk, amelyeket 1849, Petőfi halála után Arany – magára hagyottan, megélhetéssel küszködve, »túlérző fájvirág«-ként – továbbvitt
+          a még közösen megbeszélt költői programból.”</p>
+          <p><i>(Kerényi Ferenc)</i></p>
+        </div>
+        <a href="szondi_ket_aprodja.html"><button class="video_button">A konferenciáról</button></a>
+      </div>
+      <div class="video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/43OdSaB59x8" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen class="video_iframe"></iframe>
+      </div>
+    </div>
+
+    <div class="video_container">
+      <div class="video_description">
+        <h3>Esti kérdés</h3>
+        <div class="description_text">
+          <p>„A modern bölcseletek mélyéből fölbukkanó búvár-olvasó különös gyöngyöt hoz magával: az igazságkereső emberi törekvések örök viszonylagosságának felismerését.”</p>
+          <p><i>(Nyilasy Balázs)</i></p>
+        </div>
+        <a href="esti_kerdes.html"><button class="video_button">A konferenciáról</button></a>
+      </div>
+      <div class="video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bpNHuslLQFE" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen class="video_iframe"></iframe>
+
+      </div>
+    </div>
+
+    <div class="video_container">
+      <div class="video_description">
+        <h3>Apokrif</h3>
+        <div class="description_text">
+          <p>„A költőt nem tételek, kinyilatkoztatások ihletik, hanem a gondolkodás – vagy a hit – hiátusai.”</p>
+          <p><i>(Láng Gusztáv)</i></p>
+        </div>
+        <a href="apokrif.html"><button class="video_button">A konferenciáról</button></a>
+      </div>
+      <div class="video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0J3A__w-KVw" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen class="video_iframe"></iframe>
+
+      </div>
+    </div>
+
+    <div class="video_container">
+      <div class="video_description">
+        <h3>Hajnali részegség</h3>
+        <div class="description_text">
+          <p>„Tegyük hozzá, nemcsak a verset indító köznapi megszólításban, hanem az egész versen át éppen ez a különös zeneiségű, távolabbi és közelebbi tereket megnyitó, a sorok szótagszámától függetlenül rímelő, rímelhelyezésében következetlen mondat a vers építőeleme; azért ’mondható’ vers a Hajnali részegség, mert mondatai ’valószínűtlenül’ közel állnak a magyar mondat természetes tagolásához – és éppen ezért olyan megrázó is a vers;
+            ’túl édes’-nek olvasható ritmusképe a halált, a nagy kezdőbetűvel
+            írott Semmit szólítja meg.”</p>
+          <p><i>(Bányai János)</i></p>
+        </div>  
+          
+        <a href="hajnali_reszegseg.html"><button class="video_button">A
+            konferenciáról</button></a>
+      </div>
+      <div class="video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5XfCEGVaVLI" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen class="video_iframe"></iframe>
+
+      </div>
+    </div>
+
+    <div class="video_container">
+      <div class="video_description">
+        <h3>Valse triste</h3>
+        <div class="description_text">
+          <p>„Nemcsak a tudattalan ősegység, az éntudat előtti állapot, az elsajátított és átlényegített kulturális tudás őrződött meg benne, de emlékezete őrizte az általa írt rigmusokat, szójátékokat, szövegeket és azok írásképét, a megengedő beszéd- és íráshelyzetben használt vagy nem használt szövegtagoló jelek meglétét vagy hiányát is.”</p>
+          <p><i>(Sipos Lajos)</i></p>
+        </div>  
+          
+        <a href="valse_triste.html"><button class="video_button">A konferenciáról</button></a>
+      </div>
+      <div class="video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0QH5PBJSSTk" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen class="video_iframe"></iframe>
+
+      </div>
+    </div>
+
+    <div class="video_container">
+      <div class="video_description">
+        <h3>Kocsi-út az éjszakában</h3>
+        <div class="description_text">
+          <p>„De még ha szomorú vagy fájdalmas mindenegészeltörött-érzésekre és igazságokra lelhetünk is az út során, biztos, hogy tanítványaink is, de mi tanárok is (minden újabb Ady-tanítás után) úgy érezhetjük, hogy az élet legizzóbb kérdéseivel találkoztunk útközben
+            egy olyan költő oldalán, aki korlátozhatatlan bátorsággal
+            és rezzenéstelen etikaisággal képes szembenézni az égő csipkebokorral, de akár annak a hiányával is, vagy az ember szebbik arcának védelme érdekében szembeszállni a bálványimádókkal és a romboló erőkkel.”</p>
+          <p><i>(Gordon Győri János)</i></p>
+        </div> 
+          
+        <a href="kocsi-ut_az_ejszakaban.html"><button class="video_button">A
+            konferenciáról</button></a>
+      </div>
+      <div class="video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0dwd7fSlIj8" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen class="video_iframe"></iframe>
+
+      </div>
+    </div>
+
+    <div class="video_container">
+      <div class="video_description">
+        <h3>Ki viszi át a Szerelmet</h3>
+        <div class="description_text">
+          <p>„Akadtak pillanatok, amikor Nagy László tizennégy sora szinte védtelenné vált: tudjuk jól ugyanis, hogy még a legérzékenyebb, legtermékenyebb elemzés is más nyelven beszél, mint maga a műalkotás.”</p>
+          <p><i>(Tarján Tamás)</i></p>
+        </div> 
+          
+        <a href="ki_viszi_at_a_szerelmet.html"><button class="video_button">A
+            konferenciáról</button></a>
+      </div>
+      <div class="video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8FrXlJxBuXs" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen class="video_iframe"></iframe>
+
+      </div>
+    </div>
+
+    <div class="video_container">
+      <div class="video_description">
+        <h3>A közelítő tél</h3>
+        <div class="description_text">
+          <p>„A költőt nem tételek, kinyilatkoztatások ihletik, hanem a gondolkodás – vagy a hit – hiátusai.”</p>
+          <p><i>(Láng Gusztáv)</i></p>
+        </div>  
+          
+        <a href="a_kozelito_tel.html"><button class="video_button">A konferenciáról</button></a>
+      </div>
+      <div class="video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/myoOziuexq8" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen class="video_iframe"></iframe>
+
+      </div>
+    </div>
+
+    <div class="video_container">
+      <div class="video_description">
+        <h3>A vén cigány</h3>
+        <div class="description_text">
+          <p>„A közelítés mint poétikai kerülőút arra enged következtetni,
+            hogy A közelítő tél egészen egyszerűen az élet dicsérete, és azért hiányzik belőle a tél, mert a magyar verstradícióban sem idegen szimbolikája szerint ez az évszak már a nem-élet ideje.”</p>
+          <p><i>(Faragó Kornélia)</i></p>
+        </div>  
+          
+        <a href="a_ven_cigany.html"><button class="video_button">A konferenciáról</button></a>
+      </div>
+      <div class="video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KlgT7kOPQm8" title="YouTube video player"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen class="video_iframe"></iframe>
+
+      </div>
+    </div>
+
+  </div>
+  <div id="sidenav"><span id="opensidenav" onclick="openNav()">A Konferenciák</span></div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a class="shortcut" href="szeptember_vegen.html">Szeptember végén</a>
+    <a class="shortcut" href="apokrif.html">Apokrif</a>
+    <a class="shortcut" href="szondi_ket_aprodja.html">Szondi két apródja</a>
+    <a href="esti_kerdes.html">Esti kérdés</a>
+    <a href="level_a_hitveshez.html">Levél a hitveshez</a>
+    <a href="hajnali_reszegseg.html">Hajnali részegség</a>
+    <a href="ki_viszi_at_a_szerelmet.html">Ki viszi át a Szerelmet</a>
+    <a href="kocsi-ut_az_ejszakaban.html">Kocsi-út az éjszakában</a>
+    <a href="a_kozelito_tel.html">A közelítő tél</a>
+    <a href="a_ven_cigany.html">A vén cigány</a>
+    <a href="eszmelet.html">Eszmélet</a>
+    <a href="valse_triste.html">Valse triste</a>
+    <a href="koltotol_koltoig.html">Koltótól Koltóig</a>
+  </div>
+
+  <script src="JS files/videos.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>A 12 legszebb magyar vers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <link href="CSS files/homepage.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 400) {
+          $("nav").addClass("scrolled");
+        } else {
+          $("nav").removeClass("scrolled");
+        }
+      });
+    });
+
+    $(function () {
+      $(".pulse").hover(function () {
+        $(this).removeClass("pulse");
+      }, function () {
+        $(this).addClass("pulse");
+      });
+    });
+  </script>
+  
+  <style>
+    .hero-image {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Synopsis pictures/A 12 legszebb magyar vers-program kotetei_2013.JPG");
+  height: 100vh !important;
+  max-height: none;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text h1 {
+    font-family: 'Italianno', cursive;
+    font-weight: lighter;
+    font-size: 144px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-family: Open Sans;
+    font-style: italic;
+    margin: 0;
+    font-size: 40px;
+}
+  </style>
+</head>
+
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>A 12 legszebb magyar vers</h1>
+      <p>Konferencia- és könyvsorozat</p>
+    </div>
+
+    <div id="go-down">
+      <a id="scroll-page" href="#container">
+        <div class="icon pulsing">
+          <img width="100px" height="100px" src="Pictures/Miscellaneous/21b2f90c2f7987aaca53138b416fede2.svg">
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  <nav>
+    <span onclick="mobilenav()" id="mobile_nav"><img src="Pictures/Miscellaneous/menu_black_48dp.svg"><span
+        id="mobile_title">A 12 legszebb magyar vers</span></span>
+    <ul id="desktop_nav">
+      <li><a href="homepage.html" class="active">Főoldal</a></li>
+      <li><a href="synopsis.html">Szinopszis</a></li>
+      <li><a href="books.html">Könyvek</a></li>
+      <li><a href="videos.html">Nagy Versmondások</a></li>
+      <li><a href="gallery.html">Galéria</a></li>
+      <li><a href="next.html">A folytatás</a></li>
+
+    </ul>
+  </nav>
+
+  <div id="container">
+
+    <div class="box">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Szeptember_vegen/Half_size/Julia es Sandor a koltoi Teleki-kastely parkjaban.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Petőfi Sándor</p>
+          <p>Szeptember végén</p>
+        </div>
+      </div>
+      <div class="second_content">
+        <p>Petőfi Sándor (1823–1849) a magyar romantika ma is legelevenebb költője. Született tehetségének,
+          természetességének köszönhetően verseskötete ma is ott van minden magyar család könyvespolcán. Költészetében
+          szerelem, önzetlenség, szabadság, halál érvényes módon szólal meg, mert mindezeket életével és halálával
+          hitelesítette.</p>
+        <p>Szeptember végén című verse a boldogság pillanatában megfogalmazott kétkedést, a biztosban a
+          bizonytalanságot, az életben a halált sejteti. </p>
+        <a href="szeptember_vegen.html"><button>TOVÁBB</button></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Apokrif/Half_size/Szombathelyi szininovendekek segitik a kozos versmondast.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Pilinszky János</p>
+          <p>Apokrif</p>
+        </div>
+      </div>
+      <div class="second_content">
+        <p>Pilinszky János (1921–1981) a magyar klasszikus modern költészet megújítója, a megélt emberi szenvedés, a
+          létezés titokkereső költője. Verseit mély katolikus hite és a szeretet filozófiája, illetve a nyelv
+          szimbolikus ereje tartja életben. Apokrif című apokaliptikus verse horizontot nyit a posztmodernség felé. A
+          szöveg összegzi mindazt, ami az 1950-es évek Magyarországán elmondható szenvedésről, tékozlásról,
+          megbocsátásról, megváltásról a XX. és a XXI. század emberének.</p>
+        <a href="apokrif.html"><button>TOVÁBB</button></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Szondi_ket_aprodja/Half_size/Remeny.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Arany János</p>
+          <p>Szondi két apródja</p>
+        </div>
+      </div>
+      <div class="second_content">
+        <p>
+          Arany János (1817–1882) a magyar késő romantika legnagyobb epikus költője. Petőfivel való szellemi barátsága
+          legendás a magyar irodalom történetében. Petőfi halála és a levert szabadságharc után Arany a magyar
+          értelmiség erkölcsi támasza lesz. A Szondi két apródja című balladájában mutatja meg, hogy hűségről, emberi
+          tartásról kevés szóval hogyan lehet beszélni. A vers ars poeticaként is értelmezhető, mely Baudelaire-nek A
+          Romlás virágai című kötetével egy időben született.
+        </p>
+        <a href="szondi_ket_aprodja.html"><button>TOVÁBB</button></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Esti_kerdes/Half_size/Sikerult!.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Babits Mihály</p>
+          <p>Esti kérdés</p>
+        </div>
+      </div>
+      <div class="second_content">
+        <p>
+          Babits Mihály (1883–1941) tudós költő, regényíró, szerkesztő, műfordító, összegző irodalmár. Szerepe a magyar
+          irodalomban hasonló Arany Jánoséhoz. Fiatalkori verse, az Esti kérdés minden eszmélkedő értelmiségi ember
+          számára örök kérdést vet fel. Ezen messze túljut élete végén, a Jónás könyve bibliai parafrázisában. Ebben
+          értelmezi mindazokat a kérdéseket, melyeket a XX. század történelmi abszurditása hozott az emberiségre. A
+          modern elbeszélő költemény egyben végiggondolja az írástudók örök felelősségét.
+        </p>
+        <a href="esti_kerdes.html"><button>TOVÁBB</button></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Level_a_hitveshez/Half_size/Mintegy 600 kis-nagy versmondo - Szabo Zsolt fotoja.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Radnóti Miklós</p>
+          <p>Levél a hitveshez</p>
+        </div>
+      </div>
+      <div class="second_content">
+        <p>
+          Radnóti Miklós (1909–1944) magyar zsidó költő, az újklasszicizmus képviselője, emellett kiváló műfordító. A
+          fasizmus ártatlan áldozata, akinek özvegye ma is szerényen őrzi férje emberi-alkotói hagyatékát. A Levél a
+          hitveshez egy neki címzett episztola, melyet a Bori noteszben, a költő legyilkolása után egy évvel találtak
+          meg a holttest exhumálásakor. Radnóti a kiszolgáltatottak méltóságával vállalta a halált, s ez nemcsak emberi
+          nagyság, hanem figyelmeztetés is.
+        </p>
+        <a href="level_a_hitveshez.html"><button>TOVÁBB</button></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Level_a_hitveshez/Half_size/A koltore Fuzfa Otto emlekezik - O volt az, aki tanitvanyaival eloszor kitisztitotta a gyilkossag helyszinet 1959-ben - Fuzfa Balazs fotoja.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Kosztolányi Dezső</p>
+          <p>Hajnali részegség</p>
+        </div>
+      </div>
+      <div class="second_content">
+        <p>
+          Kosztolányi Dezső (1885–1936) minden műfajban remekelt, alkotóként, kritikusként, műfordítóként egyaránt
+          elismerték már életében is. Legismertebb regénye az Édes Anna. A Hajnali részegség az érett költő összegzése a
+          világról, melyben élnie adatott. A hitetlenül hívő ember vallomása a földi létezés egészéről, az igazán fontos
+          dolgokról. Megfogalmazása szerint életünk során mindannyian „vendégek” vagyunk a Földön, s legfontosabb
+          „tettünk” a részvét lehet.
+        </p>
+        <a href="hajnali_reszegseg.html"><button>TOVÁBB</button></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Level_a_hitveshez/Half_size/A konferencia helyszine, a frissen epult abdai Kozseghaza - Fuzfa Balazs fotoja.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Nagy László</p>
+          <p class="poem_title">Ki viszi át a Szerelmet</p>
+        </div>
+      </div>
+      <div class="second_content">
+        <p>
+          Nagy László (1925–1978) „versben bujdosó” emberként alázattal írt, fordított és rajzolt. Költészetében
+          találkozik a magyar népi hagyomány a modernséggel. Tiszta, népies és szürrealista hangjának köszönhetően sorai
+          szállóigék lettek. Ki viszi át a Szerelmet című versének alapkérdései végül felkiáltó mondatokká válnak,
+          rondóként térve vissza az örök kezdethez.
+        </p>
+        <a href="ki_viszi_at_a_szerelmet.html"><button>TOVÁBB</button></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Level_a_hitveshez/Half_size/Akik majdnem minden konferencian ott voltak (Sz. Toth Gyula, Odorics Ferenc, Boldog Zoltan) - Szabo Zsolt fotoja.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Ady Endre</p>
+          <p>Kocsi-út az éjszakában</p>
+        </div>
+      </div>
+      <div class="second_content">
+        <p>
+          Ady Endre (1877–1919), a modern magyar költészet vezéralakja, igazán „más” költő. Mások a versei, mint az
+          elődök alkotásai. Ő az első azok közül, akik úgy szeretnek, hogy közben gyűlölni is képesek. Tőle tanultuk meg
+          a csalódott szomorúságot amiatt, hogy a világ csak részeiben miénk, hogy a huszadik századra érthetetlenné
+          vált. E verse (Kocsi-út az éjszakában) mindezt szimbolikus tömörséggel, mágikus módon érzékelteti.
+        </p>
+        <a href="kocsi-ut_az_ejszakaban.html"><button>TOVÁBB</button></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Level_a_hitveshez/Half_size/Az eloadok Pannonhalmara is ellatogattak (itt toltotte utolso ejszakajat Radnoti) - Fuzfa Balazs fotoja.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Berzsenyi Dániel</p>
+          <p>A közelítő tél</p>
+        </div>
+      </div>
+      <div class="second_content">
+        <p>
+          Berzsenyi Dániel (1776–1836) hazafias ódáit és harmóniára vágyó elégiáit korában kevesen értették. Kölcsey
+          Ferenc, a magyar nemzeti Hymnus költője elmarasztalta érzelmessége miatt, de ravatalánál végül elismerte őt. A
+          közelítő tél című verset fiatal poétaként, klasszicista fegyelemmel írta. A versből a mulandóság megértése és
+          a számvetés szándéka mellett a teljesség sejtetésének vágya árad.
+        </p>
+        <a href="a_kozelito_tel.html"><button>TOVÁBB</button></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Level_a_hitveshez/Half_size/Egy kis XX. szazadi magyar irodalomtortenet a hatarainkon tul (Farago Kornelia, Tozser Arpad, Lang Gusztav) - Fuzfa Balazs fotoja.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Vörösmarty Mihály</p>
+          <p>A vén cigány</p>
+        </div>
+      </div>
+      <div class="second_content">
+        <p>
+          Vörösmarty Mihály (1800–1855) első nagy nemzeti romantikusunk, aki a kultúra formálásában is meghatározó
+          személyiség volt. S egyben első nagy létértelmezőnk, filozófus költőnk, aki gondolati verseiben
+          kérlelhetetlenül tette fel a legfontosabb kérdéseket. A szabadságharc leverése után reményvesztetten, mégis
+          reménykedő szándékkal hagyta maga mögött a hazát, az alkotó világot. Erről vall híres rapszódiája, A vén
+          cigány.
+        </p>
+        <a href="a_ven_cigany.html"><button>TOVÁBB</button></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Level_a_hitveshez/Half_size/Eroltetett menet - Szabo Zsolt fotoja.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">József Attila</p>
+          <p>Eszmélet</p>
+        </div>
+      </div>
+      <div class="second_content">
+        <p>
+          József Attila (1905–1937) születésnapja, április 11-e Magyarországon a Költészet Napja. Hozzá írták a legtöbb
+          verset más magyar alkotók. Az ártatlan magány, a hiány költője. Haragvásait, ugyanakkor meleg tekintetre,
+          bátortalan közeledésre, megbocsátásra vágyódását mindannyian értjük. Ő a magyar irodalom egyik nagy
+          összegzője. Az Eszmélet gondolati szintézise mindannak, amit egy bölcs fiatal férfi érthet a világból.
+        </p>
+        <a href="eszmelet.html"><button>TOVÁBB</button></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Level_a_hitveshez/Half_size/Gyulekeznek a versmondok - Szabo Zsolt fotoja.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Weöres Sándor</p>
+          <p>Valse triste</p>
+        </div>
+      </div>
+      <div class="second_content">
+        <p>
+          Weöres Sándor (1913–1989) csodagyerek és garabonciás diák, költő-filozófus, fordító. Gyerekverseit minden
+          magyar generáció ismeri anélkül is, hogy tudná, ki írta azokat. Költészetében teremtődés és elmúlás oly közel
+          van egymáshoz, hogy az már természetességgé szelídül. Így szól az elmúlásról, a lélek megbékéléséről Valse
+          triste című versében is. S miközben a költeményt olvassuk, érezzük, hogy bennünk a lélek békéje a természet
+          erejéből táplálkozik.
+        </p>
+        <a href="valse_triste.html"><button>TOVÁBB</button></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Level_a_hitveshez/Half_size/Gyulekeznek a versmondok - Szabo Zsolt fotoja.JPG');">
+        </div>
+        <div class="title">
+          <p>Koltótól Koltóig</p>
+        </div>
+      </div>
+      <div class="second_content">
+        <p>
+          "A kezdet pontjáról, Koltóról elinduló és a végén oda, tizenharmadiknak visszaforduló sorozat egy
+          költészettörténetet is bejárt, egymást követő, átugró poétikai beszédmódok, költészeti alakulások jelezték
+          önbeszédünk, a magyar költészet teremtődését is."
+        </p>
+        <a href="koltotol_koltoig.html"><button>TOVÁBB</button></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="container_mobile">
+
+    <div class="box_mobile">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Szeptember_vegen/Julia es Sandor a koltoi Teleki-kastely parkjaban.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Petőfi Sándor</p>
+          <p>Szeptember végén</p>
+          <a href="szeptember_vegen.html"><button>TOVÁBB</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box_mobile">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Apokrif/Szombathelyi színinövendékek segítik a közös versmondást.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Pilinszky János</p>
+          <p>Apokrif</p>
+          <a href="apokrif.html"><button>TOVÁBB</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box_mobile">
+      <div class="first_content">
+        <div class="picture" style="background-image: url('Pictures/Box pictures/Szondi_ket_aprodja/Remény.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Arany János</p>
+          <p>Szondi két apródja</p>
+          <a href="szondi_ket_aprodja.html"><button>TOVÁBB</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box_mobile">
+      <div class="first_content">
+        <div class="picture" style="background-image: url('Pictures/Box pictures/Esti_kerdes/Sikerült!.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Babits Mihály</p>
+          <p>Esti kérdés</p>
+          <a href="esti_kerdes.html"><button>TOVÁBB</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box_mobile">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Level_a_hitveshez/Mintegy 600 kis-nagy versmondó_Szabó Zsolt fotója.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Radnóti Miklós</p>
+          <p>Levél a hitveshez</p>
+          <a href="level_a_hitveshez.html"><button>TOVÁBB</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box_mobile">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Szeptember_vegen/Itt toltottek Petofiek a naszejszakat (Nagybanya).JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Kosztolányi Dezső</p>
+          <p>Hajnali részegség</p>
+          <a href="hajnali_reszegseg.html"><button>TOVÁBB</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box_mobile">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Szeptember_vegen/Koltoi disznotoros.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Nagy László</p>
+          <p class="poem_title">Ki viszi át a Szerelmet</p>
+          <a href="ki_viszi_at_a_szerelmet.html"><button>TOVÁBB</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box_mobile">
+      <div class="first_content">
+        <div class="picture" style="background-image: url('Pictures/Box pictures/Szeptember_vegen/MARGCS~1.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Ady Endre</p>
+          <p>Kocsi-út az éjszakában</p>
+          <a href="kocsi-ut_az_ejszakaban.html"><button>TOVÁBB</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box_mobile">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Szeptember_vegen/Nagybanyai varosnezo seta Varadi Izabella vezetesevel.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Berzsenyi Dániel</p>
+          <p>A közelítő tél</p>
+          <a href="a_kozelito_tel.html"><button>TOVÁBB</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box_mobile">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Synopsis pictures/A 12 legszebb magyar vers-program kotetei_2013.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Vörösmarty Mihály</p>
+          <p>A vén cigány</p>
+          <a href="a_ven_cigany.html"><button>TOVÁBB</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box_mobile">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Synopsis pictures/Esztergom_Babits_Esti kerdes.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">József Attila</p>
+          <p>Eszmélet</p>
+          <a href="eszmelet.html"><button>TOVÁBB</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box_mobile">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Szeptember_vegen/Julia es Sandor a koltoi Teleki-kastely parkjaban.JPG');">
+        </div>
+        <div class="title">
+          <p class="author">Weöres Sándor</p>
+          <p>Valse triste</p>
+          <a href="valse_triste.html"><button>TOVÁBB</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box_mobile">
+      <div class="first_content">
+        <div class="picture"
+          style="background-image: url('Pictures/Box pictures/Szeptember_vegen/Julia es Sandor a koltoi Teleki-kastely parkjaban.JPG');">
+        </div>
+        <div class="title">
+          <p>Koltótól Koltóig</p>
+          <a href="koltotol_koltoig.html"><button>TOVÁBB</button></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+    .header_wrap {
+      height: 330px !important;
+    }
+
+    .header_bg {
+      height: 330px !important;
+    }
+  </style>
+</body>
+<script>
+  function mobilenav() {
+    var x = document.getElementById("desktop_nav");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }
+</script>
+<script>
+  function mobilenav() {
+    var x = document.getElementById("desktop_nav");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }
+</script>
+
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Esti kérdés</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+  <link href="CSS files/box.css" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 100) {
+          $("nav").addClass("scrolled");
+        } else {
+          $("nav").removeClass("scrolled");
+        }
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Esti kérdés</h1>
+    </div>
+  </div>
+
+  <nav>
+    <span onclick="mobilenav()" id="mobile_nav"><img src="Pictures/Miscellaneous/menu_black_48dp.svg"><span
+        id="mobile_title">A 12 legszebb magyar vers</span></span>
+    <ul id="desktop_nav">
+      <li><a href="homepage.html" class="active">Főoldal</a></li>
+      <li><a href="synopsis.html">Szinopszis</a></li>
+      <li><a href="books.html">Könyvek</a></li>
+      <li><a href="videos.html">Nagy Versmondások</a></li>
+      <li><a href="gallery.html">Galéria</a></li>
+      <li><a href="next.html">A folytatás</a></li>
+
+    </ul>
+  </nav>
+
+  <div id="container">
+
+    <div class="accordion-div">
+      <button class="accordion">A konferencia galériája<i class="fa fa-caret-down"></i></button>
+      <div class="panel">
+
+        <div class="row">
+
+          <div class="column">
+            <div class="container" onclick="openmodal();toSlide(1)">
+              <img src="Pictures/Box pictures/Esti_kerdes/Half_size/A konferencia elso orai.JPG"
+                alt="A konferencia elso orai" class="preview" style="width:100%">
+              <span class="img_title">A konferencia első órái</span>
+            </div>
+
+            <div class="container" onclick="openmodal();toSlide(2)">
+              <img
+                src="Pictures/Box pictures/Esti_kerdes/Half_size/A konferencia helyszine Esztergomban - Szent Adalbert Kozpont.JPG"
+                class="preview" style="width:100%">
+              <span class="img_title">A konferencia helyszíne Esztergomban - Szent Adalbert Központ</span>
+            </div>
+
+            <div class="container" onclick="openmodal();toSlide(3)">
+              <img
+                src="Pictures/Box pictures/Esti_kerdes/Half_size/Babits Mihaly az Esti kerdest mondja a radioban 1938-ban.JPG"
+                class="preview" style="width:100%">
+              <span class="img_title">Babits Mihály az Esti kérdést mondja a rádióban 1938-ban</span>
+            </div>
+          </div>
+
+          <div class="column">
+
+            <div class="container" onclick="openmodal();toSlide(4)">
+              <img
+                src="Pictures/Box pictures/Esti_kerdes/Half_size/Az elso eloadast Sipos Lajos, Babits-kutato professzor tartotta.JPG"
+                class="preview" style="width:100%">
+              <span class="img_title">Az elso előadást Sipos Lajos, Babits-kutató professzor tartotta</span>
+            </div>
+
+            <div class="container" onclick="openmodal();toSlide(5)">
+              <img
+                src="Pictures/Box pictures/Esti_kerdes/Half_size/Az esztergomi foszervezo, Toth Franciska es a film szerkesztoje, Nyitrai Kata.JPG"
+                class="preview" style="width:100%">
+              <span class="img_title">Az esztergomi főszervező, Tóth Franciska és a film szerkesztője, Nyitrai
+                Kata</span>
+            </div>
+
+            <div class="container" onclick="openmodal();toSlide(6)">
+              <img
+                src="Pictures/Box pictures/Esti_kerdes/Half_size/Az utolso eloadast Pillmann Judit tanarno tatabanyai kozepiskolas diakjai tartottak.JPG"
+                class="preview" style="width:100%">
+              <span class="img_title">Az utolsó előadást Pillmann Judit tanarnő tatabányai középiskolás diákjai
+                tartották</span>
+            </div>
+
+
+          </div>
+          <div class="column">
+
+            <div class="container" onclick="openmodal();toSlide(7)">
+              <img src="Pictures/Box pictures/Esti_kerdes/Half_size/A Nagy Versmondas utan Jordan Tamas interjut ad.JPG"
+                class="preview" style="width:100%">
+              <span class="img_title">A Nagy Versmondás után Jordán Tamás interjút ad</span>
+            </div>
+
+            <div class="container" onclick="openmodal();toSlide(8)">
+              <img src="Pictures/Box pictures/Esti_kerdes/Half_size/Babits esztergomi otthonaban.jpg" class="preview"
+                style="width:100%">
+              <span class="img_title">Babits esztergomi otthonában</span>
+            </div>
+
+
+            <div class="container" onclick="openmodal();toSlide(9)">
+              <img src="Pictures/Box pictures/Esti_kerdes/Half_size/Davidhazi Peter eloadasa.JPG" class="preview"
+                style="width:100%">
+              <span class="img_title">Dávidházi Péter előadása</span>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="container" onclick="openmodal();toSlide(10)">
+              <img src="Pictures/Box pictures/Esti_kerdes/Half_size/Egy kerdes ezer torokbol.JPG" class="preview"
+                style="width:100%">
+              <span class="img_title">Egy kérdés ezer torokból</span>
+            </div>
+
+            <div class="container" onclick="openmodal();toSlide(11)">
+              <img src="Pictures/Box pictures/Esti_kerdes/Half_size/Sikerult!.JPG" class="preview" style="width:100%">
+              <span class="img_title">Sikerült!</span>
+            </div>
+
+            <div class="container" onclick="openmodal();toSlide(12)">
+              <img src="Pictures/Box pictures/Esti_kerdes/Half_size/Szitar Katalin hozzaszolasa.JPG" class="preview"
+                style="width:100%">
+              <span class="img_title">Szitár Katalin hozzászólása</span>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div id="modal" class="modal">
+
+          <div id="modal-content">
+
+            <div class="nav_buttons" id="prev_container">
+              <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            </div>
+
+            <div id="slides">
+              <div class="slide">
+                <img src="Pictures/Box pictures/Esti_kerdes/Full_size/A konferencia elso orai.JPG" class="image-slide"
+                  id="slide_1">
+              </div>
+              <div class="slide">
+                <img
+                  src="Pictures/Box pictures/Esti_kerdes/Full_size/A konferencia helyszine Esztergomban - Szent Adalbert Kozpont.JPG"
+                  class="image-slide" id="slide_2">
+              </div>
+
+              <div class="slide">
+                <img
+                  src="Pictures/Box pictures/Esti_kerdes/Full_size/Babits Mihaly az Esti kerdest mondja a radioban 1938-ban.JPG"
+                  class="image-slide" id="slide_3">
+              </div>
+
+              <div class="slide">
+                <img
+                  src="Pictures/Box pictures/Esti_kerdes/Full_size/Az elso eloadast Sipos Lajos, Babits-kutato professzor tartotta.JPG"
+                  class="image-slide" id="slide_4">
+              </div>
+
+              <div class="slide">
+                <img
+                  src="Pictures/Box pictures/Esti_kerdes/Full_size/Az esztergomi foszervezo, Toth Franciska es a film szerkesztoje, Nyitrai Kata.JPG"
+                  class="image-slide" id="slide_5">
+              </div>
+
+              <div class="slide">
+                <img
+                  src="Pictures/Box pictures/Esti_kerdes/Full_size/Az utolso eloadast Pillmann Judit tanarno tatabanyai kozepiskolas diakjai tartottak.JPG"
+                  class="image-slide" id="slide_6">
+              </div>
+
+              <div class="slide">
+                <img
+                  src="Pictures/Box pictures/Esti_kerdes/Full_size/A Nagy Versmondas utan Jordan Tamas interjut ad.JPG"
+                  class="image-slide" id="slide_7">
+              </div>
+
+              <div class="slide">
+                <img src="Pictures/Box pictures/Esti_kerdes/Full_size/Babits esztergomi otthonaban.jpg"
+                  class="image-slide" id="slide_8">
+              </div>
+
+              <div class="slide">
+                <img src="Pictures/Box pictures/Esti_kerdes/Full_size/Davidhazi Peter eloadasa.JPG" class="image-slide"
+                  id="slide_9">
+              </div>
+
+              <div class="slide">
+                <img src="Pictures/Box pictures/Esti_kerdes/Full_size/Egy kerdes ezer torokbol.JPG" class="image-slide"
+                  id="slide_10">
+              </div>
+
+              <div class="slide">
+                <img src="Pictures/Box pictures/Esti_kerdes/Full_size/Sikerult!.JPG" class="image-slide" id="slide_11">
+              </div>
+
+              <div class="slide">
+                <img src="Pictures/Box pictures/Esti_kerdes/Full_size/Szitar Katalin hozzaszolasa.JPG"
+                  class="image-slide" id="slide_12">
+              </div>
+
+            </div>
+
+            <div class="nav_buttons" id="next_container">
+              <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="poem_content">
+      <div id="poem">
+        <h2>Esti kérdés</h2>
+        <h4>Babits Mihály</h4>
+
+        <p>
+          Midőn az est, e lágyan takaró
+          <br>fekete, síma bársonytakaró,
+          <br>melyet terít egy óriási dajka,
+          <br>a féltett földet lassan eltakarja
+          <br>s oly óvatossan, hogy minden füszál
+          <br>lágy leple alatt egyenessen áll
+          <br>és nem kap a virágok szirma ráncot
+          <br>s a hímes lepke kényes, dupla szárnyán
+          <br>nem veszti a szivárványos zománcot
+          <br>és úgy pihennek e lepelnek árnyán,
+          <br>e könnyü, síma, bársonyos lepelnek,
+          <br>hogy nem is érzik e lepelt tehernek:
+          <br>olyankor bárhol járj a nagyvilágban,
+          <br>vagy otthon ülhetsz barna, bús szobádban,
+          <br>vagy kávéházban bámészan vigyázd,
+          <br>hogy gyujtják sorban a napfényü gázt;
+          <br>vagy fáradtan, domb oldalán, ebeddel
+          <br>nézzed a lombon át a lusta holdat;
+          <br>vagy országúton, melyet por lepett el,
+          <br>álmos kocsisod bóbiskolva hajthat;
+          <br>vagy a hajónak ingó padlatán
+          <br>szédülj, vagy a vonatnak pamlagán;
+          <br>vagy idegen várost bolygván keresztül
+          <br>állj meg a sarkokon csodálni restül
+          <br>a távol utcák hosszú fonalát,
+          <br>az utcalángok kettős vonalát;
+          <br>vagy épp a vízi városban, a Riván
+          <br>hol lángot apróz matt opáltükör,
+          <br>merengj a messze multba visszaríván,
+          <br>melynek emléke édesen gyötör,
+          <br>elmúlt korodba, mely miként a bűvös
+          <br>lámpának képe van is már, de nincs is,
+          <br>melynek emléke sohse lehet hűvös,
+          <br>melynek emléke teher is, de kincs is:
+          <br>ott emlékektől terhes fejedet
+          <br>a márványföldnek elcsüggesztheted:
+          <br>csupa szépség közt és gyönyörben járván
+          <br>mégis csak arra fogsz gondolni gyáván:
+          <br>ez a sok szépség mind mire való?
+          <br>mégis arra fogsz gondolni árván:
+          <br>minek a selymes víz, a tarka márvány?
+          <br>minek az est, e szárnyas takaró?
+          <br>miért a dombok és miért a lombok
+          <br>s a tenger, melybe nem vet magvető?
+          <br>minek az árok, minek az apályok
+          <br>s a felhők, e bús Danaida-lányok
+          <br>s a nap, ez égő szizifuszi kő?
+          <br>miért az emlékek, miért a multak?
+          <br>miért a lámpák és miért a holdak?
+          <br>miért a végét nem lelő idő?
+          <br>vagy vedd példának a piciny füszálat:
+          <br>miért nő a fü, hogyha majd leszárad?
+          <br>miért szárad le, hogyha újra nő?
+        </p>
+      </div>
+
+      <div id="poem_synopsis">
+        <p>Babits Mihály (1883–1941) tudós költő, regényíró, szerkesztő, műfordító, összegző irodalmár. Szerepe a magyar
+          irodalomban hasonló Arany Jánoséhoz. Fiatalkori verse, az Esti kérdés minden eszmélkedő értelmiségi ember
+          számára örök kérdést vet fel. Ezen messze túljut élete végén, a Jónás könyve bibliai parafrázisában. Ebben
+          értelmezi mindazokat a kérdéseket, melyeket a XX. század történelmi abszurditása hozott az emberiségre. A
+          modern elbeszélő költemény egyben végiggondolja az írástudók örök felelősségét.</p>
+      </div>
+    </div>
+
+    <div id="pdfs">
+
+      <div class="pdf_box desktop_pdf">
+        <h3>Az <i>Esti kérdés</i> konferencia</h3>
+        <h4>Esztergom<br>2009. április 24–26.</h4>
+        <a onclick="openprogram()">
+          <div id="poem_program" class="modal_btn">
+            <img src="Pictures/Conference program pictures/Half_size/4_1.png">
+            <img src="Pictures/Conference program pictures/Half_size/4_2.png">
+            <div class="overlay">Nézd meg a programot</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="pdf_box mobile_pdf">
+        <h3>Az <i>Esti kérdés</i> konferencia</h3>
+        <h4>Esztergom<br>2009. április 24–26.</h4>
+        <div id="poem_program" class="modal_btn">
+          <img src="Pictures/Conference program pictures/Half_size/4_1.png">
+          <img src="Pictures/Conference program pictures/Half_size/4_2.png">
+          <a href="https://drive.google.com/file/d/1uuP6HwtDmVNARhK_127o9XV5EhEVUeg5/preview" target="_blank">
+            <button class="mobile_pdf_button">Nézd meg a programot</button></a>
+        </div>
+      </div>
+
+      <div class="pdf_box desktop_pdf">
+        <h3>Az <i>Esti kérdés</i> könyv</h3>
+        <h4>Az Esztergomban 2009. április 24–25–26-án rendezett
+          Esti kérdés-konferencia szerkesztett és bővített anyaga</h4>
+        <a onclick="openbook()">
+          <div id="program_book" class="modal_btn">
+
+            <img src="Pictures/Books pictures/Covers_double/Esti_kerdes.jpg">
+            <div class="overlay">Olvasd el a könyvet</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="pdf_box mobile_pdf" id="mobile_pdf_book">
+        <h3>Az <i>Esti kérdés</i> könyv</h3>
+        <h4>Az Esztergomban 2009. április 24–25–26-án rendezett
+          Esti kérdés-konferencia szerkesztett és bővített anyaga</h4>
+        <div id="program_book" class="modal_btn">
+
+          <img src="Pictures/Books pictures/Covers_double/Esti_kerdes.jpg">
+          <a href="https://drive.google.com/file/d/1Sx8eQLIVTWLKAbAGrecKajCgrHJEcIhI/preview" target="_blank"><button
+              class="mobile_pdf_button">Olvasd
+              el a könyvet</button></a>
+        </div>
+
+        <div>
+
+        </div>
+      </div>
+
+      <div id="program_modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span onclick="closeprogram()" class="close_span"><button class="close"><img
+                src="Pictures/Miscellaneous/close_white_48dp.svg"></button></span>
+          <iframe  loading="lazy" id="program_iframe"src="https://drive.google.com/file/d/1uuP6HwtDmVNARhK_127o9XV5EhEVUeg5/preview"
+            allow="autoplay"></iframe>
+        </div>
+      </div>
+
+      <div id="book_modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span onclick="closebook()" class="close_span"><button class="close"><img
+                src="Pictures/Miscellaneous/close_white_48dp.svg"></button></span>
+
+          <iframe loading="lazy" id="book_iframe" src="https://drive.google.com/file/d/1Sx8eQLIVTWLKAbAGrecKajCgrHJEcIhI/preview"
+            allow="autoplay"></iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="similar_content">
+      <ul>
+        <li><a href="szondi_ket_aprodja.html"><span class="icon">❮</span><span>Szondi két apródja</span></a></li>
+        <li><a href="level_a_hitveshez.html"><span>Levél a hitveshez</span><span class="icon">❯</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="sidenav"><span id="opensidenav" onclick="openNav()">A Konferenciák</span></div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a class="shortcut" href="szeptember_vegen.html">Szeptember végén</a>
+    <a class="shortcut" href="apokrif.html">Apokrif</a>
+    <a class="shortcut" href="szondi_ket_aprodja.html">Szondi két apródja</a>
+    <a href="esti_kerdes.html" id="active">Esti kérdés</a>
+    <a href="level_a_hitveshez.html">Levél a hitveshez</a>
+    <a href="hajnali_reszegseg.html">Hajnali részegség</a>
+    <a href="ki_viszi_at_a_szerelmet.html">Ki viszi át a Szerelmet</a>
+    <a href="kocsi-ut_az_ejszakaban.html">Kocsi-út az éjszakában</a>
+    <a href="a_kozelito_tel.html">A közelítő tél</a>
+    <a href="a_ven_cigany.html">A vén cigány</a>
+    <a href="eszmelet.html">Eszmélet</a>
+    <a href="valse_triste.html">Valse triste</a>
+    <a href="koltotol_koltoig.html">Koltótól Koltóig</a>
+  </div>
+  <script src="JS files/box.js"></script>
+
+</body>
+
+</html>

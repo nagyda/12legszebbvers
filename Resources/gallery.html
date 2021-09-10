@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Galéria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+  <link href="CSS files/gallery.css" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 100) {
+          $("nav").addClass("scrolled");
+        } else {
+          $("nav").removeClass("scrolled");
+        }
+      });
+    });
+  </script>
+  <script>
+    function collapse() {
+var links = document.getElementById("quick_links");
+if (links.style.visibility === "visible") {
+links.style.visibility = "hidden";
+links.style.opacity = "0";
+} else {
+links.style.visibility = "visible";
+links.style.opacity = "1";
+}
+}
+</script>
+
+</head>
+
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Galéria</h1>
+    </div>
+  </div>
+
+  <nav>
+    <span onclick="mobilenav()" id="mobile_nav"><img src="Pictures/Miscellaneous/menu_black_48dp.svg"><span
+        id="mobile_title">A 12 legszebb magyar vers</span></span>
+    <ul id="desktop_nav">
+      <li><a href="homepage.html">Főoldal</a></li>
+      <li><a href="synopsis.html">Szinopszis</a></li>
+      <li><a href="books.html">Könyvek</a></li>
+      <li><a href="videos.html">Nagy Versmondások</a></li>
+      <li><a href="gallery.html" class="active">Galéria</a></li>
+      <li><a href="next.html">A folytatás</a></li>
+
+    </ul>
+  </nav>
+
+  <div class="conference_pictures_container">
+    
+    <div class="gallery_header"  id="szeptember_vegen">
+      <a href="szeptember_vegen.html"><button class="conference_link">Szeptember
+          végén</button></a>
+    </div>
+    <div class="row">
+
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(1)">
+          <img
+            src="Pictures/Box pictures/Szeptember_vegen/Half_size/Nagybanyai varosnezo seta Varadi Izabella vezetesevel.JPG"
+            alt="Nagybányai városnéző séta Váradi Izabella vezetésével" class="preview" style="width:100%">
+          <span class="img_title">Nagybányai városnéző séta Váradi Izabella vezetésével</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(2)">
+          <img src="Pictures/Box pictures/Szeptember_vegen/Half_size/A berci tetok.JPG" class="preview"
+            style="width:100%">
+          <span class="img_title">A bérci tetők</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(3)">
+          <img src="Pictures/Box pictures/Szeptember_vegen/Half_size/MARGCS~1.JPG" class="preview" style="width:100%">
+          <span class="img_title">MARGCS</span>
+        </div>
+      </div>
+
+      <div class="column">
+
+        <div class="container" onclick="openmodal();toSlide(4)">
+          <img src="Pictures/Box pictures/Szeptember_vegen/Half_size/Elnokol Lang Gusztav, eload David Gyula.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Elnököl Láng Gusztáv, előad Dávid Gyula</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(5)">
+          <img
+            src="Pictures/Box pictures/Szeptember_vegen/Half_size/Julia es Sandor a koltoi Teleki-kastely parkjaban.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Júlia és Sándor a koltói Teleki-kastély parkjában</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(6)">
+          <img src="Pictures/Box pictures/Szeptember_vegen/Half_size/Koltoi disznotoros.JPG" class="preview"
+            style="width:100%">
+          <span class="img_title">Koltói disznótoros</span>
+        </div>
+
+      </div>
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(7)">
+          <img src="Pictures/Box pictures/Szeptember_vegen/Half_size/A konferencia kozonsege (Nagybanya).JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">A konferencia közönsége (Nagybánya)</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(8)">
+          <img
+            src="Pictures/Box pictures/Szeptember_vegen/Half_size/Ady-, Kaffka-, Petofi-emlekek kozt Nagykarolyban.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Ady-, Kaffka-, Petőfi-emlékek közt Nagykárolyban</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(9)">
+          <img
+            src="Pictures/Box pictures/Szeptember_vegen/Half_size/Itt toltottek Petofiek a naszejszakat (Nagybanya).JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Itt töltötték Petőfiék a nászéjszakát (Nagybánya)</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(10)">
+          <img
+            src="Pictures/Box pictures/Szeptember_vegen/Half_size/Julia es Sandor a koltoi Teleki-kastely parkjaban.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Júlia és Sándor a koltói Teleki-kastély parkjában</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(11)">
+          <img src="Pictures/Box pictures/Szeptember_vegen/Half_size/Koltoi disznotoros.JPG" class="preview"
+            style="width:100%">
+          <span class="img_title">Koltói disznótoros</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(12)">
+          <img src="Pictures/Box pictures/Szeptember_vegen/Half_size/Elnokol Lang Gusztav, eload David Gyula.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Elnököl Láng Gusztáv, előad Dávid Gyula</span>
+        </div>
+      </div>
+
+
+
+    </div>
+
+<div class="spacer" id="apokrif"></div>
+    <div class="gallery_header">
+      <a href="apokrif.html"><button class="conference_link">Apokrif</button></a>
+    </div>
+    <div class="row">
+
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(1)">
+          <img
+            src="Pictures/Box pictures/Apokrif/Half_size/1300-an mondtuk el Jordan Tamassal az Apokrif elso reszet.JPG"
+            alt="Nagybányai városnéző séta Váradi Izabella vezetésével" class="preview" style="width:100%">
+          <span class="img_title">1300-an mondtuk el Jordán Tamással az Apokrif első részét</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(2)">
+          <img
+            src="Pictures/Box pictures/Apokrif/Half_size/A bozsoki kastely, a konferencia helyszine (Velem mellett).jpg"
+            class="preview" style="width:100%">
+          <span class="img_title">A bozsoki kastély, a konferencia helyszíne (Velem mellett)</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(3)">
+          <img
+            src="Pictures/Box pictures/Apokrif/Half_size/A nagy versmondok Pilinszky Janostol hallgatjak az Apokrifet.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">A nagy versmondók Pilinszky Jánostól hallgatják az Apokrifet</span>
+        </div>
+      </div>
+
+      <div class="column">
+
+        <div class="container" onclick="openmodal();toSlide(4)">
+          <img
+            src="Pictures/Box pictures/Apokrif/Half_size/Az Apokrif-konferencia eloadoi es kozonsege a bozsoki kastelyban.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Az Apokrif-konferencia előadói es közönsége a bozsoki kastélyban</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(5)">
+          <img
+            src="Pictures/Box pictures/Apokrif/Half_size/Az eloadok meglatogattak Pilinszky lakohelyet Velemben_Horvath Kornelia, Toth Peter, Banyai Janos, Jelenits Istvan, Vegh Balazs Bela.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Az előadók meglátogatták Pilinszky lakóhelyét Velemben (Horváth Kornélia, Tóth Péter,
+            Bányai János, Jelenits István, Végh Balázs Béla)</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(6)">
+          <img src="Pictures/Box pictures/Apokrif/Half_size/Banyai Janos eloadasa Bozsokon.JPG" class="preview"
+            style="width:100%">
+          <span class="img_title">Bányai János előadása Bozsokon</span>
+        </div>
+
+
+      </div>
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(7)">
+          <img src="Pictures/Box pictures/Apokrif/Half_size/E haz tetotereben lakott a kolto Velemben.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">E ház tetőterében lakott a költő Velemben</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(8)">
+          <img
+            src="Pictures/Box pictures/Apokrif/Half_size/Ebben a pinceben szokott iddogalni velemi barataival a kolto.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Ebben a pincében szokott iddogálni velemi barátaival a költő</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(9)">
+          <img src="Pictures/Box pictures/Apokrif/Half_size/Jelenits atya a konferencian.JPG" class="preview"
+            style="width:100%">
+          <span class="img_title">Jelenits atya a konferencián</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(10)">
+          <img
+            src="Pictures/Box pictures/Apokrif/Half_size/Jordan Tamas vezenyli az elso Nagy Versmondast a szombathelyi Sporthazban.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Jordán Tamás vezényli az első Nagy Versmondást a szombathelyi Sportházban</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(11)">
+          <img
+            src="Pictures/Box pictures/Apokrif/Half_size/Szemben Antonio Sciacovelli, aki leforditotta mind a 12 verset olaszra.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Szemben Antonio Sciacovelli, aki lefordította mind a 12 verset olaszra</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(12)">
+          <img
+            src="Pictures/Box pictures/Apokrif/Half_size/Szombathelyi szininovendekek segitik a kozos versmondast.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Szombathelyi színinövendékek segítik a közös versmondást</span>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="spacer" id="szondi_ket_aprodja"></div>
+    <div class="gallery_header" >
+      <a href="szondi_ket_aprodja.html"><button class="conference_link">Szondi két
+          apródja</button></a>
+    </div>
+    <div class="row">
+
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(1)">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/Half_size/A helyszin nappali fenyben.JPG"
+            alt="A helyszín nappali fényben.JPG" class="preview" style="width:100%">
+          <span class="img_title">A helyszín nappali fényben</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(2)">
+          <img
+            src="Pictures/Box pictures/Szondi_ket_aprodja/Half_size/A konferencia helyszine diszkivilagitasban_a szecsenyi Kubinyi Ferenc kastely.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">A konferencia helyszíne díszkivilágításban: A szécsényi Kubinyi Ferenc kastély</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(3)">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/Half_size/Keszulodes, proba.JPG" class="preview"
+            style="width:100%">
+          <span class="img_title">Készülődés, próba</span>
+        </div>
+
+      </div>
+
+      <div class="column">
+
+        <div class="container" onclick="openmodal();toSlide(4)">
+          <img
+            src="Pictures/Box pictures/Szondi_ket_aprodja/Half_size/Az elozo konferencia kotetenek bemutatoja (Apokrif).JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Az előző konferencia kötetének bemutatója (Apokrif)</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(5)">
+          <img
+            src="Pictures/Box pictures/Szondi_ket_aprodja/Half_size/Balassagyarmati kozepiskolasok viszik a verset a hegyre....JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Balassagyarmati középiskolások viszik a verset a hegyre...</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(6)">
+          <img
+            src="Pictures/Box pictures/Szondi_ket_aprodja/Half_size/Jordan Tamas a Nagy Versmondas helyszinere tart.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Jordán Tamás a Nagy Versmondás helyszínére tart</span>
+        </div>
+
+      </div>
+
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(7)">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/Half_size/Jelenits Istvan interjut ad az MTV-nek.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Jelenits István interjút ad az MTV-nek</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(8)">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/Half_size/Eg es fold kozott.JPG" class="preview"
+            style="width:100%">
+          <span class="img_title">Ég és föld között</span>
+        </div>
+
+
+        <div class="container" onclick="openmodal();toSlide(9)">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/Half_size/A nagy versmondok.JPG" class="preview"
+            style="width:100%">
+          <span class="img_title">A nagy versmondók</span>
+        </div>
+
+      </div>
+
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(10)">
+          <img
+            src="Pictures/Box pictures/Szondi_ket_aprodja/Half_size/Ko Pal Szondi-szarkofagja Dregelypalankon_Majcher Tamas fotoja.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Kő Pál Szondi-szarkofágja Drégelypalánkon (Majcher Tamás fotója.JPG</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(11)">
+          <img
+            src="Pictures/Box pictures/Szondi_ket_aprodja/Half_size/Praznovszky Mihaly elnokol, Nyilasy Balazs eload -- hattal Lang Gusztav.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Praznovszky Mihály elnököl, Nyilasy Balázs előad -- háttal Láng Gusztáv</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(12)">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/Half_size/Remeny.JPG" class="preview" style="width:100%">
+          <span class="img_title">Remény</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spacer" id="esti_kerdes"></div>
+    <div class="gallery_header">
+      <a href="esti_kerdes.html"><button class="conference_link">Esti kérdés</button></a>
+    </div>
+    <div class="row">
+
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(1)">
+          <img src="Pictures/Box pictures/Esti_kerdes/Half_size/A konferencia elso orai.JPG"
+            alt="A konferencia elso orai" class="preview" style="width:100%">
+          <span class="img_title">A konferencia első órái</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(2)">
+          <img
+            src="Pictures/Box pictures/Esti_kerdes/Half_size/A konferencia helyszine Esztergomban - Szent Adalbert Kozpont.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">A konferencia helyszíne Esztergomban - Szent Adalbert Központ</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(3)">
+          <img
+            src="Pictures/Box pictures/Esti_kerdes/Half_size/Babits Mihaly az Esti kerdest mondja a radioban 1938-ban.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Babits Mihály az Esti kérdést mondja a rádióban 1938-ban</span>
+        </div>
+      </div>
+
+      <div class="column">
+
+        <div class="container" onclick="openmodal();toSlide(4)">
+          <img
+            src="Pictures/Box pictures/Esti_kerdes/Half_size/Az elso eloadast Sipos Lajos, Babits-kutato professzor tartotta.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Az elso előadást Sipos Lajos, Babits-kutató professzor tartotta</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(5)">
+          <img
+            src="Pictures/Box pictures/Esti_kerdes/Half_size/Az esztergomi foszervezo, Toth Franciska es a film szerkesztoje, Nyitrai Kata.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Az esztergomi főszervező, Tóth Franciska és a film szerkesztője, Nyitrai Kata</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(6)">
+          <img
+            src="Pictures/Box pictures/Esti_kerdes/Half_size/Az utolso eloadast Pillmann Judit tanarno tatabanyai kozepiskolas diakjai tartottak.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Az utolsó előadást Pillmann Judit tanarnő tatabányai középiskolás diákjai
+            tartották</span>
+        </div>
+
+
+      </div>
+      <div class="column">
+
+        <div class="container" onclick="openmodal();toSlide(7)">
+          <img src="Pictures/Box pictures/Esti_kerdes/Half_size/A Nagy Versmondas utan Jordan Tamas interjut ad.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">A Nagy Versmondás után Jordán Tamás interjút ad</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(8)">
+          <img src="Pictures/Box pictures/Esti_kerdes/Half_size/Babits esztergomi otthonaban.jpg" class="preview"
+            style="width:100%">
+          <span class="img_title">Babits esztergomi otthonában</span>
+        </div>
+
+
+        <div class="container" onclick="openmodal();toSlide(9)">
+          <img src="Pictures/Box pictures/Esti_kerdes/Half_size/Davidhazi Peter eloadasa.JPG" class="preview"
+            style="width:100%">
+          <span class="img_title">Dávidházi Péter előadása</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(10)">
+          <img src="Pictures/Box pictures/Esti_kerdes/Half_size/Egy kerdes ezer torokbol.JPG" class="preview"
+            style="width:100%">
+          <span class="img_title">Egy kérdés ezer torokból</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(11)">
+          <img src="Pictures/Box pictures/Esti_kerdes/Half_size/Sikerult!.JPG" class="preview" style="width:100%">
+          <span class="img_title">Sikerült!</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(12)">
+          <img src="Pictures/Box pictures/Esti_kerdes/Half_size/Szitar Katalin hozzaszolasa.JPG" class="preview"
+            style="width:100%">
+          <span class="img_title">Szitár Katalin hozzászólása</span>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="spacer" id="level_a_hitveshez"></div>
+    <div class="gallery_header">
+      <a href="level_a_hitveshez.html"><button class="conference_link">Levél a
+          hitveshez</button></a>
+    </div>
+    <div class="row">
+
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(1)">
+          <img
+            src="Pictures/Box pictures/Level_a_hitveshez/Half_size/A koltore Fuzfa Otto emlekezik - O volt az, aki tanitvanyaival eloszor kitisztitotta a gyilkossag helyszinet 1959-ben - Fuzfa Balazs fotoja.JPG"
+            alt="A költőre Fűzfa Ottó emlékezik - Ő volt az, aki tanítványaival először kitisztította a gyilkosság helyszínét 1959-ben - Fűzfa Balázs fotója"
+            class="preview" style="width:100%">
+          <span class="img_title">A költőre Fűzfa Ottó emlékezik - Ő volt az, aki tanítványaival először kitisztította a
+            gyilkosság helyszínét 1959-ben - Fűzfa Balázs fotója</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(2)">
+          <img
+            src="Pictures/Box pictures/Level_a_hitveshez/Half_size/A konferencia helyszine, a frissen epult abdai Kozseghaza - Fuzfa Balazs fotoja.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">A konferencia helyszíne, a frissen épült abdai Községháza - Fűzfa Balázs fotója</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(3)">
+          <img src="Pictures/Box pictures/Level_a_hitveshez/Half_size/Jordan Tamas koncentral - Szabo Zsolt fotoja.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Jordán Tamás koncentrál - Szabó Zsolt fotója</span>
+        </div>
+
+      </div>
+
+      <div class="column">
+
+        <div class="container" onclick="openmodal();toSlide(4)">
+          <img
+            src="Pictures/Box pictures/Level_a_hitveshez/Half_size/Az eloadok Pannonhalmara is ellatogattak (itt toltotte utolso ejszakajat Radnoti) - Fuzfa Balazs fotoja.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Az előadók Pannonhalmára is ellátogattak (itt töltötte utolsó éjszakáját Radnóti) -
+            Fűzfa Balázs fotója</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(5)">
+          <img
+            src="Pictures/Box pictures/Level_a_hitveshez/Half_size/Egy kis XX. szazadi magyar irodalomtortenet a hatarainkon tul (Farago Kornelia, Tozser Arpad, Lang Gusztav) - Fuzfa Balazs fotoja.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Egy kis XX. századi magyar irodalomtörténet a határainkon túl (Faragó Kornélia, Tőzsér
+            Árpád, Láng Gusztáv) - Fűzfa Balázs fotója</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(6)">
+          <img src="Pictures/Box pictures/Level_a_hitveshez/Half_size/Eroltetett menet - Szabo Zsolt fotoja.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Erőltetett menet - Szabó Zsolt fotója</span>
+        </div>
+
+
+      </div>
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(7)">
+          <img
+            src="Pictures/Box pictures/Level_a_hitveshez/Half_size/Fazekas Bence rendezo instural - Szabo Zsolt fotoja.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Fazekas Bence rendező insturál - Szabó Zsolt fotója</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(8)">
+          <img src="Pictures/Box pictures/Level_a_hitveshez/Half_size/Gyulekeznek a versmondok - Szabo Zsolt fotoja.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Gyülekeznek a versmondók - Szabó Zsolt fotoja</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(9)">
+          <img
+            src="Pictures/Box pictures/Level_a_hitveshez/Half_size/Akik majdnem minden konferencian ott voltak (Sz. Toth Gyula, Odorics Ferenc, Boldog Zoltan) - Szabo Zsolt fotoja.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Akik majdnem minden konferencián ott voltak (Sz. Tóth Gyula, Odorics Ferenc, Boldog
+            Zoltán) - Szabó Zsolt fotója</span>
+        </div>
+
+
+      </div>
+
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(10)">
+          <img src="Pictures/Box pictures/Level_a_hitveshez/Half_size/Jordan Tamas vezenyel - Szabo Zsolt fotoja.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Jordán Tamás vezényel - Szabó Zsolt fotója</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(11)">
+          <img
+            src="Pictures/Box pictures/Level_a_hitveshez/Half_size/Mintegy 600 kis-nagy versmondo - Szabo Zsolt fotoja.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Mintegy 600 kis-nagy versmondó - Szabó Zsolt fotója</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(12)">
+          <img src="Pictures/Box pictures/Level_a_hitveshez/Half_size/Radnoti monografusa, Vilcsek Bela elnokol.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Radnóti monográfusa, Vilcsek Béla elnököl</span>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="spacer" id="ki_viszi_at_a_szerelmet"></div>
+    <div class="gallery_header">
+      <a href="ki_viszi_at_a_szerelmet.html"><button class="conference_link">Ki viszi át a
+          Szerelmet</button></a>
+    </div>
+    <div class="row">
+
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(1)">
+          <img
+            src="Pictures/Box pictures/Ki_viszi_at_a_Szerelmet/Half_size/A Bozsodi-kvartett jatszik a kolto szulohazanak bolgar szobajaban.JPG"
+            alt="A Bozsodi-kvartett játszik a költő szülőházának bolgár szobájában" class="preview" style="width:100%">
+          <span class="img_title">A Bozsodi-kvartett játszik a költő szülőházának bolgár szobájában</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(2)">
+          <img
+            src="Pictures/Box pictures/Ki_viszi_at_a_Szerelmet/Half_size/A konferencia eloadoi es hallgatoi az ajkai konyvtarban.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">A konferencia előadói és hallgatói az ajkai könyvtárban</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(3)">
+          <img src="Pictures/Box pictures/Ki_viszi_at_a_Szerelmet/Half_size/Jordan Tamas instrual.jpg" class="preview"
+            style="width:100%">
+          <span class="img_title">Jordán Tamás instruál</span>
+        </div>
+      </div>
+
+      <div class="column">
+
+        <div class="container" onclick="openmodal();toSlide(4)">
+          <img src="Pictures/Box pictures/Ki_viszi_at_a_Szerelmet/Half_size/Jordan Tamas rendkivuli orat tart.jpg"
+            class="preview" style="width:100%">
+          <span class="img_title">Jordán Tamás rendkívüli órát tart</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(5)">
+          <img
+            src="Pictures/Box pictures/Ki_viszi_at_a_Szerelmet/Half_size/Talan majd ok atviszik... a Nagy Versmondas elokeszuletei Ajkan Jordan Tamassal.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Talán majd ők átviszik... a Nagy Versmondás előkészületei Ajkán Jordán Tamással</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(6)">
+          <img src="Pictures/Box pictures/Ki_viszi_at_a_Szerelmet/Half_size/Jordan Tamas vezenyel.jpg" class="preview"
+            style="width:100%">
+          <span class="img_title">Jordán Tamás vezényel</span>
+        </div>
+
+
+      </div>
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(7)">
+          <img
+            src="Pictures/Box pictures/Ki_viszi_at_a_Szerelmet/Half_size/Korulbelul ezer diak mondta egyutt, hangosan a verset.jpg"
+            class="preview" style="width:100%">
+          <span class="img_title">Körülbelül ezer diák mondta együtt, hangosan a verset</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(8)">
+          <img
+            src="Pictures/Box pictures/Ki_viszi_at_a_Szerelmet/Half_size/Nagy Andras, a kolto fia beszel a szulohaznal.JPG"
+            class="preview" style="width:100%">
+          <span class="img_title">Nagy András, a költő fia beszél a szülőháznál</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(9)">
+          <img src="Pictures/Box pictures/Ki_viszi_at_a_Szerelmet/Half_size/Pavlicz Adrienn, az ajkai foszervezo.jpg"
+            class="preview" style="width:100%">
+          <span class="img_title">Pávlicz Adrienn, az ajkai főszervező</span>
+        </div>
+
+      </div>
+
+      <div class="column">
+        <div class="container" onclick="openmodal();toSlide(10)">
+          <img
+            src="Pictures/Box pictures/Ki_viszi_at_a_Szerelmet/Half_size/Nagy Laszlo_Ki viszi at a szerelmet (Nagy Andras tulajdona).jpg"
+            class="preview" style="width:100%">
+          <span class="img_title">Nagy László - Ki viszi át a szerelmet (Nagy András tulajdona)</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(11)">
+          <img src="Pictures/Box pictures/Ki_viszi_at_a_Szerelmet/Half_size/Nagy Versmondas Ajkan.JPG" class="preview"
+            style="width:100%">
+          <span class="img_title">Nagy Versmondás Ajkán</span>
+        </div>
+
+        <div class="container" onclick="openmodal();toSlide(12)">
+          <img src="Pictures/Box pictures/Ki_viszi_at_a_Szerelmet/Half_size/Nagy Laszlo (Nagy Andras tulajdona).jpg"
+            class="preview" style="width:100%">
+          <span class="img_title">Nagy László (Nagy András tulajdona)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal">
+    <div id="modal-content">
+      <div class="nav_buttons" id="prev_container">
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      </div>
+
+      <div id="slides">
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szeptember_vegen/Nagybanyai varosnezo seta Varadi Izabella vezetesevel.JPG"
+            class="image-slide" id="slide_1">
+        </div>
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szeptember_vegen/A berci tetok.JPG" class="image-slide" id="slide_2">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szeptember_vegen/MARGCS~1.JPG" class="image-slide" id="slide_3">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szeptember_vegen/Itt toltottek Petofiek a naszejszakat (Nagybanya).JPG"
+            class="image-slide" id="slide_4">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szeptember_vegen/Julia es Sandor a koltoi Teleki-kastely parkjaban.JPG"
+            class="image-slide" id="slide_5">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szeptember_vegen/Koltoi disznotoros.JPG" class="image-slide" id="slide_6">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szeptember_vegen/Ady-, Kaffka-, Petofi-emlekek kozt Nagykarolyban.JPG"
+            class="image-slide" id="slide_7">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szeptember_vegen/Elnokol Lang Gusztav, eload David Gyula.JPG"
+            class="image-slide" id="slide_8">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szeptember_vegen/A konferencia kozonsege (Nagybanya).JPG" class="image-slide"
+            id="slide_9">
+        </div>
+        <div class="slide">
+          <img src="Pictures/Box pictures/Apokrif/1300-an mondtuk el Jordán Tamással az Apokrif első részét.JPG"
+            class="image-slide" id="slide_10">
+        </div>
+        <div class="slide">
+          <img src="Pictures/Box pictures/Apokrif/A bozsoki kastély, a konferencia helyszíne (Velem mellett).jpg"
+            class="image-slide" id="slide_11">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Apokrif/A nagy versmondók Pilinszky Jánostól hallgatják az Apokrifet.JPG"
+            class="image-slide" id="slide_12">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Apokrif/Az Apokrif-konferencia előadói és közönsége a bozsoki kastélyban.JPG"
+            class="image-slide" id="slide_13">
+        </div>
+
+        <div class="slide">
+          <img
+            src="Pictures/Box pictures/Apokrif/Az előadók meglátogatták Pilinszky lakóhelyét Velemben_Horváth Kornélia, Tóth Péter, Bányai János, Jelenits István, Végh Balázs Béla.JPG"
+            class="image-slide" id="slide_14">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Apokrif/Bányai János előadása Bozsokon.JPG" class="image-slide" id="slide_15">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Apokrif/E ház tetőterében lakott a költő Velemben.JPG" class="image-slide"
+            id="slide_16">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Apokrif/Ebben a pincében szokott iddogálni velemi barátaival a költő.JPG"
+            class="image-slide" id="slide_17">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Apokrif/Jelenits atya a konferencián.JPG" class="image-slide" id="slide_18">
+        </div>
+
+        <div class="slide">
+          <img
+            src="Pictures/Box pictures/Apokrif/Jordán Tamás vezényli az első Nagy Versmondást a szombathelyi Sportházban.JPG"
+            class="image-slide" id="slide_19">
+        </div>
+
+        <div class="slide">
+          <img
+            src="Pictures/Box pictures/Apokrif/Szemben Antonio Sciacovelli, aki lefordította mind a 12 verset olaszra.JPG"
+            class="image-slide" id="slide_20">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Apokrif/Szombathelyi színinövendékek segítik a közös versmondást.JPG"
+            class="image-slide" id="slide_21">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/A konferencia első órái.JPG" class="image-slide" id="slide_1">
+        </div>
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/A konferencia helyszíne Esztergomban_Szent Adalbert Központ.JPG"
+            class="image-slide" id="slide_2">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/A Nagy Versmondás után Jordán Tamás interjút ad.JPG"
+            class="image-slide" id="slide_3">
+        </div>
+
+        <div class="slide">
+          <img
+            src="Pictures/Box pictures/Esti_kerdes/Az első előadást Sipos Lajos, Babits-kutató professzor tartotta.JPG"
+            class="image-slide" id="slide_4">
+        </div>
+
+        <div class="slide">
+          <img
+            src="Pictures/Box pictures/Esti_kerdes/Az esztergomi főszervező, Tóth Franciska és a film szerkesztője, Nyitrai Kata.JPG"
+            class="image-slide" id="slide_5">
+        </div>
+
+        <div class="slide">
+          <img
+            src="Pictures/Box pictures/Esti_kerdes/Az utolsó előadást Pillmann Judit tanárnő tatabányai középiskolás diákjai tartották.JPG"
+            class="image-slide" id="slide_6">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/Babits esztergomi otthonában.jpg" class="image-slide"
+            id="slide_7">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/Babits Mihály az Esti kérdést mondja a rádióban 1938-ban.JPG"
+            class="image-slide" id="slide_8">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/Dávidházi Péter előadása.JPG" class="image-slide" id="slide_9">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/Egy kérdés ezer torokból.JPG" class="image-slide" id="slide_10">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/Sikerült!.JPG" class="image-slide" id="slide_11">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/Szitár Katalin hozzászólása.JPG" class="image-slide"
+            id="slide_12">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/A helyszín nappali fényben.JPG" class="image-slide"
+            id="slide_1">
+        </div>
+        <div class="slide">
+          <img
+            src="Pictures/Box pictures/Szondi_ket_aprodja/A konferencia helyszíne díszkivilágításban_a szécsényi Kubinyi Ferenc kastély.JPG"
+            class="image-slide" id="slide_2">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/A nagy versmondók.JPG" class="image-slide" id="slide_3">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/Az előző konferencia kötetének bemutatója (Apokrif).JPG"
+            class="image-slide" id="slide_4">
+        </div>
+
+        <div class="slide">
+          <img
+            src="Pictures/Box pictures/Szondi_ket_aprodja/Balassagyarmati középiskolások viszik a verset a hegyre....JPG"
+            class="image-slide" id="slide_5">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/Ég és föld között.JPG" class="image-slide" id="slide_6">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/Jelenits István interjút ad az MTV-nek.JPG"
+            class="image-slide" id="slide_7">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/Jordán Tamás a Nagy Versmondás helyszínére tart.JPG"
+            class="image-slide" id="slide_8">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/Készülődés, próba.JPG" class="image-slide" id="slide_9">
+        </div>
+
+        <div class="slide">
+          <img
+            src="Pictures/Box pictures/Szondi_ket_aprodja/Kő Pál Szondi-szarkofágja Drégelypalánkon_Majcher Tamás fotója.JPG"
+            class="image-slide" id="slide_10">
+        </div>
+
+        <div class="slide">
+          <img
+            src="Pictures/Box pictures/Szondi_ket_aprodja/Praznovszky Mihály elnököl, Nyilasy Balázs előad -- háttal Láng Gusztáv.JPG"
+            class="image-slide" id="slide_11">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Szondi_ket_aprodja/Remény.JPG" class="image-slide" id="slide_12">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/A konferencia első órái.JPG" class="image-slide" id="slide_1">
+        </div>
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/A konferencia helyszíne Esztergomban_Szent Adalbert Központ.JPG"
+            class="image-slide" id="slide_2">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/A Nagy Versmondás után Jordán Tamás interjút ad.JPG"
+            class="image-slide" id="slide_3">
+        </div>
+
+        <div class="slide">
+          <img
+            src="Pictures/Box pictures/Esti_kerdes/Az első előadást Sipos Lajos, Babits-kutató professzor tartotta.JPG"
+            class="image-slide" id="slide_4">
+        </div>
+
+        <div class="slide">
+          <img
+            src="Pictures/Box pictures/Esti_kerdes/Az esztergomi főszervező, Tóth Franciska és a film szerkesztője, Nyitrai Kata.JPG"
+            class="image-slide" id="slide_5">
+        </div>
+
+        <div class="slide">
+          <img
+            src="Pictures/Box pictures/Esti_kerdes/Az utolsó előadást Pillmann Judit tanárnő tatabányai középiskolás diákjai tartották.JPG"
+            class="image-slide" id="slide_6">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/Babits esztergomi otthonában.jpg" class="image-slide"
+            id="slide_7">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/Babits Mihály az Esti kérdést mondja a rádióban 1938-ban.JPG"
+            class="image-slide" id="slide_8">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/Dávidházi Péter előadása.JPG" class="image-slide" id="slide_9">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/Egy kérdés ezer torokból.JPG" class="image-slide" id="slide_10">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/Sikerült!.JPG" class="image-slide" id="slide_11">
+        </div>
+
+        <div class="slide">
+          <img src="Pictures/Box pictures/Esti_kerdes/Szitár Katalin hozzászólása.JPG" class="image-slide"
+            id="slide_12">
+        </div>
+      </div>
+
+      <div class="nav_buttons" id="next_container">
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+
+    </div>
+  </div>
+  <div id="sidenav"><span id="opensidenav" onclick="openNav()">A Konferenciák</span></div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a class="shortcut" href="szeptember_vegen.html">Szeptember végén</a>
+    <a class="shortcut" href="apokrif.html">Apokrif</a>
+    <a class="shortcut" href="szondi_ket_aprodja.html">Szondi két apródja</a>
+    <a href="esti_kerdes.html">Esti kérdés</a>
+    <a href="level_a_hitveshez.html">Levél a hitveshez</a>
+    <a href="hajnali_reszegseg.html">Hajnali részegség</a>
+    <a href="ki_viszi_at_a_szerelmet.html">Ki viszi át a Szerelmet</a>
+    <a href="kocsi-ut_az_ejszakaban.html">Kocsi-út az éjszakában</a>
+    <a href="a_kozelito_tel.html">A közelítő tél</a>
+    <a href="a_ven_cigany.html">A vén cigány</a>
+    <a href="eszmelet.html">Eszmélet</a>
+    <a href="valse_triste.html">Valse triste</a>
+    <a href="koltotol_koltoig.html">Koltótól Koltóig</a>
+  </div>
+
+  <script src="JS files/synopsis.js"></script>
+  <script src="JS files/modal.js"></script>
+
+  <script>
+
+var modal = document.getElementById('modal');
+  var program_modal = document.getElementById('modal-content');
+  var sidenav = document.getElementById('mySidenav');
+var container = document.getElementById('poem_content');
+var shortcut = document.getElementsByClassName('shortcut');
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      document.body.style.overflowY = "auto";
+    }
+    if (event.target == program_modal) {
+      modal.style.display = 'none';
+      document.body.style.overflowY = "auto";
+    }
+
+    if (event.target != sidenav) {
+      sidenav.style.width = "0";
+    }
+
+    if (event.target == document.getElementById('opensidenav')) {
+      sidenav.style.width = "300px";
+    }
+  }
+
+  function mobilenav() {
+    var x = document.getElementById("desktop_nav");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }
+  </script>
+  <script>
+    function mobilenav() {
+      var x = document.getElementById("desktop_nav");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+    }
+  </script>
+  
+</body>
+
+</html>
