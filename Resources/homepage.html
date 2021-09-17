@@ -33,6 +33,36 @@
     });
   </script>
   
+  <script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        document.getElementById("mobile_nav").style.height = "50px";
+        document.getElementById("mobile_nav").style.backgroundColor = "white";
+        document.getElementById("mobile_nav").style.opacity = "1";
+        document.getElementById("mobile_title").style.color = "#74b1fc";
+        document.getElementById("mobile_nav_subtitle").style.display = "none";
+        document.getElementById("menu_black").style.display = "block";
+        document.getElementById("menu_white").style.display = "none";
+        document.getElementById("nav_on_mobile").style.maxHeight = "0";
+        document.getElementById("desktop_nav_on_mobile").style.display = "none";
+      }
+
+       else {
+        document.getElementById("mobile_nav").style.backgroundColor = "#74b1fc";
+        document.getElementById("mobile_nav").style.opacity = "1";
+        document.getElementById("mobile_nav").style.height = "100px";
+        document.getElementById("mobile_title").style.color = "#fff";
+        document.getElementById("mobile_nav_subtitle").style.display = "inline";
+        document.getElementById("menu_black").style.display = "none";
+        document.getElementById("menu_white").style.display = "block";
+      }
+    }
+    </script>
+
+   
+
   <style>
     .hero-image {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Synopsis pictures/A 12 legszebb magyar vers-program kotetei_2013.JPG");
@@ -58,6 +88,14 @@
     margin: 0;
     font-size: 40px;
 }
+
+.header_wrap {
+      height: 330px !important;
+    }
+
+    .header_bg {
+      height: 330px !important;
+    }
   </style>
 </head>
 
@@ -78,9 +116,7 @@
 
   </div>
 
-  <nav>
-    <span onclick="mobilenav()" id="mobile_nav"><img src="Pictures/Miscellaneous/menu_black_48dp.svg"><span
-        id="mobile_title">A 12 legszebb magyar vers</span></span>
+  <nav id="nav">
     <ul id="desktop_nav">
       <li><a href="homepage.html" class="active">Főoldal</a></li>
       <li><a href="synopsis.html">Szinopszis</a></li>
@@ -88,9 +124,30 @@
       <li><a href="videos.html">Nagy Versmondások</a></li>
       <li><a href="gallery.html">Galéria</a></li>
       <li><a href="next.html">A folytatás</a></li>
-
     </ul>
   </nav>
+  <nav id="nav_on_mobile">
+    <ul id="desktop_nav_on_mobile">
+      <li><a href="homepage.html" class="active">Főoldal</a></li>
+      <li><a href="synopsis.html">Szinopszis</a></li>
+      <li><a href="books.html">Könyvek</a></li>
+      <li><a href="videos.html">Nagy Versmondások</a></li>
+      <li><a href="gallery.html">Galéria</a></li>
+      <li><a href="next.html">A folytatás</a></li>
+    </ul>
+  </nav>
+
+  <div id="mobile_nav">
+    <span onclick="mobilenav()" id="nav_icon">
+      <img id="menu_white" src="Pictures/Miscellaneous/menu_white_48dp.svg">
+      <img id="menu_black" src="Pictures/Miscellaneous/menu_black_48dp.svg">
+
+      <div id="mobile_nav_text">
+      <span id="mobile_title">A 12 legszebb magyar vers</span>
+      <p id="mobile_nav_subtitle">Konferencia- és könyvsorozat</p>
+    </div>
+    </span>
+  </div>
 
   <div id="container">
 
@@ -377,7 +434,7 @@
     <div class="box_mobile">
       <div class="first_content">
         <div class="picture"
-          style="background-image: url('Pictures/Box pictures/Szeptember_vegen/Julia es Sandor a koltoi Teleki-kastely parkjaban.JPG');">
+          style="background-image: url('/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Box pictures/Szeptember_vegen/Half_size/Julia es Sandor a koltoi Teleki-kastely parkjaban.JPG');">
         </div>
         <div class="title">
           <p class="author">Petőfi Sándor</p>
@@ -390,7 +447,7 @@
     <div class="box_mobile">
       <div class="first_content">
         <div class="picture"
-          style="background-image: url('Pictures/Box pictures/Apokrif/Szombathelyi színinövendékek segítik a közös versmondást.JPG');">
+          style="background-image: url('/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Box pictures/Apokrif/Half_size/Szombathelyi szininovendekek segitik a kozos versmondast.JPG');">
         </div>
         <div class="title">
           <p class="author">Pilinszky János</p>
@@ -402,7 +459,7 @@
 
     <div class="box_mobile">
       <div class="first_content">
-        <div class="picture" style="background-image: url('Pictures/Box pictures/Szondi_ket_aprodja/Remény.JPG');">
+        <div class="picture" style="background-image: url('/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Box pictures/Szondi_ket_aprodja/Half_size/Remeny.JPG');">
         </div>
         <div class="title">
           <p class="author">Arany János</p>
@@ -414,7 +471,7 @@
 
     <div class="box_mobile">
       <div class="first_content">
-        <div class="picture" style="background-image: url('Pictures/Box pictures/Esti_kerdes/Sikerült!.JPG');">
+        <div class="picture" style="background-image: url('/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Box pictures/Esti_kerdes/Half_size/Sikerult!.JPG');">
         </div>
         <div class="title">
           <p class="author">Babits Mihály</p>
@@ -426,8 +483,7 @@
 
     <div class="box_mobile">
       <div class="first_content">
-        <div class="picture"
-          style="background-image: url('Pictures/Box pictures/Level_a_hitveshez/Mintegy 600 kis-nagy versmondó_Szabó Zsolt fotója.JPG');">
+        <div class="picture" style="background-image: url('/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Box pictures/Esti_kerdes/Half_size/Sikerult!.JPG');">
         </div>
         <div class="title">
           <p class="author">Radnóti Miklós</p>
@@ -439,8 +495,7 @@
 
     <div class="box_mobile">
       <div class="first_content">
-        <div class="picture"
-          style="background-image: url('Pictures/Box pictures/Szeptember_vegen/Itt toltottek Petofiek a naszejszakat (Nagybanya).JPG');">
+        <div class="picture" style="background-image: url('/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Box pictures/Esti_kerdes/Half_size/Sikerult!.JPG');">
         </div>
         <div class="title">
           <p class="author">Kosztolányi Dezső</p>
@@ -452,8 +507,7 @@
 
     <div class="box_mobile">
       <div class="first_content">
-        <div class="picture"
-          style="background-image: url('Pictures/Box pictures/Szeptember_vegen/Koltoi disznotoros.JPG');">
+        <div class="picture" style="background-image: url('/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Box pictures/Esti_kerdes/Half_size/Sikerult!.JPG');">
         </div>
         <div class="title">
           <p class="author">Nagy László</p>
@@ -465,7 +519,7 @@
 
     <div class="box_mobile">
       <div class="first_content">
-        <div class="picture" style="background-image: url('Pictures/Box pictures/Szeptember_vegen/MARGCS~1.JPG');">
+        <div class="picture" style="background-image: url('/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Box pictures/Esti_kerdes/Half_size/Sikerult!.JPG');">
         </div>
         <div class="title">
           <p class="author">Ady Endre</p>
@@ -477,8 +531,7 @@
 
     <div class="box_mobile">
       <div class="first_content">
-        <div class="picture"
-          style="background-image: url('Pictures/Box pictures/Szeptember_vegen/Nagybanyai varosnezo seta Varadi Izabella vezetesevel.JPG');">
+        <div class="picture" style="background-image: url('/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Box pictures/Esti_kerdes/Half_size/Sikerult!.JPG');">
         </div>
         <div class="title">
           <p class="author">Berzsenyi Dániel</p>
@@ -490,8 +543,7 @@
 
     <div class="box_mobile">
       <div class="first_content">
-        <div class="picture"
-          style="background-image: url('Pictures/Synopsis pictures/A 12 legszebb magyar vers-program kotetei_2013.JPG');">
+        <div class="picture" style="background-image: url('/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Box pictures/Esti_kerdes/Half_size/Sikerult!.JPG');">
         </div>
         <div class="title">
           <p class="author">Vörösmarty Mihály</p>
@@ -503,8 +555,7 @@
 
     <div class="box_mobile">
       <div class="first_content">
-        <div class="picture"
-          style="background-image: url('Pictures/Synopsis pictures/Esztergom_Babits_Esti kerdes.JPG');">
+        <div class="picture" style="background-image: url('/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Box pictures/Esti_kerdes/Half_size/Sikerult!.JPG');">
         </div>
         <div class="title">
           <p class="author">József Attila</p>
@@ -516,8 +567,7 @@
 
     <div class="box_mobile">
       <div class="first_content">
-        <div class="picture"
-          style="background-image: url('Pictures/Box pictures/Szeptember_vegen/Julia es Sandor a koltoi Teleki-kastely parkjaban.JPG');">
+        <div class="picture" style="background-image: url('/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Box pictures/Esti_kerdes/Half_size/Sikerult!.JPG');">
         </div>
         <div class="title">
           <p class="author">Weöres Sándor</p>
@@ -529,8 +579,7 @@
 
     <div class="box_mobile">
       <div class="first_content">
-        <div class="picture"
-          style="background-image: url('Pictures/Box pictures/Szeptember_vegen/Julia es Sandor a koltoi Teleki-kastely parkjaban.JPG');">
+        <div class="picture" style="background-image: url('/Users/Private/Documents/Developer documents/Web development/12legszebbvers/Resources/Pictures/Box pictures/Esti_kerdes/Half_size/Sikerult!.JPG');">
         </div>
         <div class="title">
           <p>Koltótól Koltóig</p>
@@ -541,35 +590,34 @@
 
   </div>
 
-  <style>
-    .header_wrap {
-      height: 330px !important;
-    }
-
-    .header_bg {
-      height: 330px !important;
-    }
-  </style>
 </body>
+
+
 <script>
   function mobilenav() {
-    var x = document.getElementById("desktop_nav");
-    if (x.style.display === "flex") {
+    var y = document.getElementById('nav_on_mobile');
+    var x = document.getElementById('desktop_nav_on_mobile');
+    
+
+    if (y.style.maxHeight == "500px") {
+      y.style.maxHeight = "0";
       x.style.display = "none";
+
     } else {
+      y.style.maxHeight = "500px";
       x.style.display = "flex";
+
+      document.getElementById("mobile_nav").style.height = "50px";
+        document.getElementById("mobile_nav").style.backgroundColor = "white";
+        document.getElementById("mobile_nav").style.opacity = "1";
+        document.getElementById("mobile_title").style.color = "#74b1fc";
+        document.getElementById("mobile_nav_subtitle").style.display = "none";
+        document.getElementById("menu_black").style.display = "block";
+        document.getElementById("menu_white").style.display = "none";
     }
   }
 </script>
-<script>
-  function mobilenav() {
-    var x = document.getElementById("desktop_nav");
-    if (x.style.display === "flex") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "flex";
-    }
-  }
-</script>
+
+
 
 </html>
